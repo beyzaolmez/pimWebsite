@@ -25,19 +25,79 @@ p {
 	color: black;
 }
 
-/* header */
+	/* header */
 header {
 	display: grid;
 	grid-column: 1/13;
-	background-color: aqua;
+	grid-template-columns: inherit;
+	background-color: rgba(42, 81, 103, 0.75);
 }
 
-/* footer */
+#headerContainer {
+	display: flex;
+	justify-content: space-between;
+	grid-column: 2/12;
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+}
+
+/* will be commented out when the img is decided
+#logo > img {
+	width: 60px;
+	height: 70px;
+}
+*/
+
+#logo > p {
+	font-size: 30px !important;
+	letter-spacing: 0.2em;
+	color: white;
+} 
+
+ul {
+	display: flex;
+	list-style-type: none;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 20px;
+	margin-left: 75px;
+	padding: 0px 20px 0px 20px;
+}
+
+a {
+	font-family: 'Raleway';
+	font-size: 25px;
+	letter-spacing: 0.15em;
+	text-decoration: none;
+	color: rgba(42, 81, 103, 0.75);
+	padding: 0;
+}
+	/* header ends */
+
+	/* footer */
 footer {
 	display: grid;
 	grid-column: 1/13;
-	background-color: aqua;
+	grid-template-columns: inherit;
+	background-color: rgba(42, 81, 103, 0.75);
+
 }
+
+footer > p {
+	grid-column: 9/12;
+	color: white !important;
+	font-size: 15px !important;
+	letter-spacing: 0.15em !important;
+	text-align: right;
+}
+	/* footer ends */
 
 #sectionOne {
 	grid-column: 2/12;
