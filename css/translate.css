@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+#container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+body{
+    grid-column: 1/13;
+}
+#intro{
+    grid-column: 2/8;
+}
+.welcome{
+    font-size: 30px;
+    font-family: Raleway;
+}
+.question{
+    font-size: 40px;
+    font-family: Raleway;
+}
+#buttons{
+    grid-column: 2/5;
+    display: flex;
+    flex-direction: row;
+}
+.change{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    background-color: rgba(42, 81, 103, 0.85);
+    width: 101px;
+    height: 44px;
+}
+.connect{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 81, 103, 0.25);
+    width: 187px;
+    height: 44px;
+}
+.img{
+    width: 35px;
+    height: 35px;
+    mix-blend-mode: multiply;
+}
+#translator{
+    grid-column: 2/11;
+    margin-top: 20px;
+}
+.languages{
+    display: flex;
+    justify-content: left;
+    background-color: #D9D9D9;
+}
+.texts{
+    display: flex;
+    flex-direction: row;
+}
+.englishText{
+    height: 367px;
+    width: 1196px;
+    background-color: #D9D9D9;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+input{
+    margin-top: 30px;
+    width: 105px;
+    height: 45px;
+    border-radius: 5px;
+    border-color: transparent;
+}
