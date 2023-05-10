@@ -14,6 +14,18 @@
 
     <body>
         <div id="container">
+            <header>
+                <div id="headerContainer">
+                    <div id="logo">
+                        <p> img </p> <!-- <img src="" alt="logo"> the image will be added-->
+                        <p> A.I. P.I.M. </p>
+                    </div>
+                    <ul>
+                        <li> <a href="#"> translate  </a> </li>
+                        <li> <a href="aboutUs.html"> about us  </a> </li>
+                    </ul>
+                </div>
+            </header>
             <div id="intro">
                 <h2 class="welcome">Welcome,</h2>
                 <h1 class="question">What do you want to translate?</h1>
@@ -21,11 +33,11 @@
             <div id="buttons">
                 <div class="change">
                     <img class="img" src="img/translate-icon.png" alt="text">
-                    <a href="Translate-text.php"><p>Text</p></a>
+                    <a href="Translate-text.php"><p class="link">Text</p></a>
                 </div>
                 <div class="connect">
                     <img class="img" src="img/talking-head.png" alt="connect">
-                    <a href="translate.php"><p>Connect to Pim</p></a>
+                    <a href="translate.php"><p class="link">Connect to Pim</p></a>
                 </div>
             </div>
             <div id="translator">
@@ -44,6 +56,9 @@
                     </form>
                 </div>
             </div>
+            <footer>
+                <p> brought to you by team A </p>
+            </footer>
         </div>
 
     </body>
