@@ -1,3 +1,9 @@
+<?php
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $english = filter_input(INPUT_POST, "english", FILTER_SANITIZE_SPECIAL_CHARS);
+        $dutch = filter_input(INPUT_POST, "dutch", FILTER_SANITIZE_SPECIAL_CHARS);
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,22 +29,20 @@
                 </div>
             </div>
             <div id="translator">
-                <form method="POST" action="Translate-text.php">
-                    <div id="translate">
-                        <div class="languages">
-                            <p>English</p>
-                            <img class="lang" src="img/switch.png" alt="switch">
-                            <p>Dutch</p>
-                        </div>
-                        <form method="POST" action="Translate-text.php">
-                            <div class="texts">
-                                <textarea class="englishText" placeholder="type to translate"></textarea>
-                                <textarea class="dutchText"></textarea>
-                            </div>
-                            <input type="submit" name="submit" value="translate">
-                        </form>
+                <div id="translate">
+                    <div class="languages">
+                        <p>English</p>
+                        <img class="lang" src="img/switch.png" alt="switch">
+                        <p>Dutch</p>
                     </div>
-                </form>
+                    <form method="POST" action="Translate-text.php">
+                        <div class="texts">
+                            <textarea name="english" class="englishText" placeholder="type to translate"></textarea>
+                            <textarea name="dutch" class="dutchText"></textarea>
+                        </div>
+                        <input type="submit" name="submit" value="translate">
+                    </form>
+                </div>
             </div>
         </div>
 

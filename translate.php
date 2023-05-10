@@ -1,3 +1,9 @@
+<?php
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $english = filter_input(INPUT_POST, "english", FILTER_SANITIZE_SPECIAL_CHARS);
+    $dutch = filter_input(INPUT_POST, "dutch", FILTER_SANITIZE_SPECIAL_CHARS);
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
