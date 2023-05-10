@@ -21,17 +21,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div id="buttons">
         <div class="change">
             <img class="img" src="img/translate-icon.png" alt="text">
-            <p>Text</p>
+            <a href="Translate-text.php"><p>Text</p></a>
         </div>
         <div class="connect">
             <img class="img" src="img/talking-head.png" alt="connect">
-            <p>Connect to Pim</p>
+            <a href="translate.php"><p>Connect to Pim</p></a>
         </div>
     </div>
     <div id="translator">
         <div id="translate">
             <div class="languages">
-                <p>English</p>
+                <p class="text">English</p>
             </div>
             <form method="POST" action="translate.php">
                 <div class="texts">
