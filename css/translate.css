@@ -78,7 +78,6 @@ footer {
 	grid-column: 1/13;
 	grid-template-columns: inherit;
 	background-color: rgba(42, 81, 103, 0.75);
-    height: 100%;
     width: 100%;
 }
 
@@ -240,6 +239,7 @@ textarea {
 
 input {
     margin-top: 30px;
+    font-size: 15px;
     border-color: transparent;
     padding: 10px;
     background: rgba(42, 81, 103, 0.25);
