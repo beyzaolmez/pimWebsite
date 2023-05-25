@@ -33,11 +33,11 @@
     <div id="buttons">
         <div class="change">
             <img class="img" src="img/translate-icon.png" alt="text">
-            <a href="Translate-text.php"><p class="link">Text</p></a>
+            <a class="link" href="translateText.php"><p class="link">Text</p></a>
         </div>
         <div class="connect">
             <img class="img" src="img/talking-head.png" alt="connect">
-            <a href="translate.php"><p class="link">Connect to Pim</p></a>
+            <a class="link" href="translate.php"><p class="link">Connect to Pim</p></a>
         </div>
     </div>
     <div id="translator">
@@ -52,7 +52,7 @@
                     <textarea name="english" class="englishText" placeholder="type to translate"></textarea>
                     <textarea name="dutch" class="dutchText"></textarea>
                 </div>
-                <input type="submit" name="submit" value="translate">
+                <input type="submit" name="submit" value="Translate!">
             </form>
         </div>
     </div>
