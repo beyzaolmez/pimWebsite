@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #container {
@@ -11,85 +11,85 @@ body {
 }
 
 p {
-	font-family: 'Raleway';
-	font-size: 15px;
-	color: black;
+    font-family: 'Raleway';
+    font-size: 15px;
+    color: black;
 }
 
-	/* header */
+    /* header */
 header {
-	display: grid;
-	grid-column: 1/13;
-	grid-template-columns: inherit;
-	background-color: rgba(42, 81, 103, 0.75);
+    display: grid;
+    grid-column: 1/13;
+    grid-template-columns: inherit;
+    background-color: rgba(42, 81, 103, 0.75);
 }
 
 #headerContainer {
-	display: flex;
-	justify-content: space-between;
-	grid-column: 2/12;
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2/12;
 }
 
 #logo {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 #logo > img {
-	width: 60px;
-	height: 60px;
-	border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
 }
 
 #logo > p {
-	font-size: 30px !important;
-	letter-spacing: 0.2em;
-	color: white;
-	margin-left: 32px;
+    font-size: 30px !important;
+    letter-spacing: 0.2em;
+    color: white;
+    margin-left: 32px;
 } 
 
 ul {
-	display: flex;
-	list-style-type: none;
+    display: flex;
+    list-style-type: none;
 }
 
 li {
-	display: flex;
-	align-items: center;
-	background-color: white;
-	border-radius: 20px;
-	margin-left: 75px;
-	padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 75px;
+    padding: 0px 20px 0px 20px;
 }
 
 li > a {
-	font-family: 'Raleway';
-	font-size: 25px;
-	letter-spacing: 0.15em;
-	text-decoration: none;
-	color: rgba(42, 81, 103, 0.75);
-	padding: 0;
+    font-family: 'Raleway';
+    font-size: 25px;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    color: rgba(42, 81, 103, 0.75);
+    padding: 0;
 }
-	/* header ends */
+    /* header ends */
 
-	/* footer */
+    /* footer */
 footer {
-	display: grid;
-	grid-column: 1/13;
-	grid-template-columns: inherit;
-	background-color: rgba(42, 81, 103, 0.75);
+    display: grid;
+    grid-column: 1/13;
+    grid-template-columns: inherit;
+    background-color: rgba(42, 81, 103, 0.75);
     width: 100%;
 }
 
 footer > p {
-	grid-column: 9/12;
-	color: white !important;
-	font-size: 15px !important;
-	letter-spacing: 0.15em !important;
-	text-align: right;
+    grid-column: 9/12;
+    color: white !important;
+    font-size: 15px !important;
+    letter-spacing: 0.15em !important;
+    text-align: right;
     font-family: 'Raleway';
 }
-	/* footer ends */
+    /* footer ends */
 
 #intro {
     grid-column: 2/8;

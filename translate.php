@@ -51,7 +51,7 @@
                 </div>
                 <input type="submit" name="submit" value="Translate!">
             </form>
-            </div>
+        </div>
     </div>
     <footer>
         <p> brought to you by team A </p>
