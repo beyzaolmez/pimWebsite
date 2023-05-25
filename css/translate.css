@@ -172,7 +172,7 @@ h1 {
 }
 
 #translator { 
-    grid-column: 2/11;
+    grid-column: 2/12;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -205,11 +205,19 @@ h1 {
 .texts {
     display: flex;
     flex-direction: row;
-    height: 300px;
+}
+
+textarea {  
+    font-family: 'Raleway';
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    height: 400px;
+    resize: none;
 }
 
 .englishText {
-    height: 100%;
     width: 50%;
     background-color: #D9D9D9;
     border-left-color: transparent;
@@ -217,7 +225,6 @@ h1 {
 }
 
 .englishText2 {
-    height: 100%;
     width: 100% !important;
     background-color: #D9D9D9;
     border-left-color: transparent;
@@ -225,7 +232,6 @@ h1 {
 }
 
 .dutchText {
-    height: 100%;
     width: 50%;
     background-color: #D9D9D9;
     border-right-color: transparent;

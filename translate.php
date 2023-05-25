@@ -47,7 +47,7 @@
             </div>
             <form method="POST" action="translate.php">
                 <div class="texts">
-                    <textarea class="englishText2" placeholder="type to translate"></textarea>
+                    <textarea class="englishText2" placeholder="Type to translate"></textarea>
                 </div>
                 <input type="submit" name="submit" value="Translate!">
             </form>
