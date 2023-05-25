@@ -17,7 +17,7 @@
     <header>
         <div id="headerContainer">
             <div id="logo">
-            <img src="img/logo.png" alt="logo">
+                <img src="img/logo.png" alt="logo">
                 <p> A.I. P.I.M. </p>
             </div>
             <ul>
@@ -33,25 +33,28 @@
     <div id="buttons">
         <div class="change">
             <img class="img" src="img/translate-icon.png" alt="text">
-            <a class="link" href="translateText.php"><p class="link">Text</p></a>
+            <a href="Translate-text.php"><p class="link">Text</p></a>
         </div>
         <div class="connect">
             <img class="img" src="img/talking-head.png" alt="connect">
-            <a class="link" href="translate.php"><p class="link">Connect to Pim</p></a>
+            <a href="translate.php"><p class="link">Connect to Pim</p></a>
         </div>
     </div>
     <div id="translator">
         <div id="translate">
             <div class="languages">
-                <p class="text">English</p>
+                <p>English</p>
+                <img class="lang" src="img/switch.png" alt="switch">
+                <p>Dutch</p>
             </div>
-            <form method="POST" action="translate.php">
+            <form method="POST" action="Translate-text.php">
                 <div class="texts">
-                    <textarea class="englishText" placeholder="type to translate"></textarea>
+                    <textarea name="english" class="englishText" placeholder="type to translate"></textarea>
+                    <textarea name="dutch" class="dutchText"></textarea>
                 </div>
                 <input type="submit" name="submit" value="translate">
             </form>
-            </div>
+        </div>
     </div>
     <footer>
         <p> brought to you by team A </p>
