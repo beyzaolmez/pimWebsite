@@ -28,6 +28,19 @@ def transcribe_endpoint():
     return send_file("audio/output/output.wav", mimetype="audio/wav")
 
 
+@app.route('/conn_pim', methods=['POST'])
+def connect_to_pim_endpoint():
+    text = request.form['english']
+
+    file_path = 'txt/transcription.txt'
+    with open(file_path, 'w') as file:
+        file.write(text)
+
+    button_state = 'translate'
+
+    handle_button_state(button_state)
+
+
 def handle_button_state(button_state):
     # Handle the button state here
     handle_button_click(button_state)

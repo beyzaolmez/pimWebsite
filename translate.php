@@ -1,11 +1,12 @@
 <?php
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $english = filter_input(INPUT_POST, "english", FILTER_SANITIZE_SPECIAL_CHARS);
-        $dutch = filter_input(INPUT_POST, "dutch", FILTER_SANITIZE_SPECIAL_CHARS);
+//        $dutch = filter_input(INPUT_POST, "Dutch", FILTER_SANITIZE_SPECIAL_CHARS);
+
     }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Translate text</title>
@@ -40,14 +41,16 @@
             <a class="link" href="translate.php"><p class="link">Connect to Pim</p></a>
         </div>
     </div>
+
+    
     <div id="translator">
         <div id="translate">
             <div class="languages">
                 <p class="text">English</p>
             </div>
-            <form method="POST" action="translate.php">
+            <form method="POST" action="http://localhost:5000/conn_pim">
                 <div class="texts">
-                    <textarea class="englishText2" placeholder="Type to translate"></textarea>
+                    <textarea class="englishText2" name="english" placeholder="Type to translate"></textarea>
                 </div>
                 <input type="submit" name="submit" value="Translate!">
             </form>
