@@ -1,6 +1,6 @@
 from gtts import gTTS
-from .gpt_translate import translate_text
-from .gpt_converse_en_nl import en_to_nl, en_to_en
+from backend_script.gpt_translate import translate_text
+from backend_script.gpt_converse_en_nl import en_to_nl, en_to_en
 
 VALID_BUTTON_STATES = ["translate", "en_nl_conversation", "en_en_conversation"]
 current_button_state = None

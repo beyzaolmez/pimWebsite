@@ -1,8 +1,8 @@
-from flask import Flask, send_file, request
+from flask import Flask, send_file, request, jsonify
 import openai
 
 from backend_script.transcribe import transcribe
-from backend_script.operations import handle_button_click
+from operations import handle_button_click
 
 api_key_path = "txt/api-key.txt"
 with open(api_key_path, 'r') as files:
@@ -39,6 +39,8 @@ def connect_to_pim_endpoint():
     button_state = 'translate'
 
     handle_button_state(button_state)
+
+    return jsonify(success=True)
 
 
 def handle_button_state(button_state):
