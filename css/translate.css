@@ -60,6 +60,10 @@ li {
     border-radius: 20px;
     margin-left: 75px;
     padding: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+li:hover{
+    background-color: #F1F1F1;
 }
 
 li > a {
@@ -122,6 +126,10 @@ h1 {
     background: rgba(42, 81, 103, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    cursor: pointer;
+}
+.change:hover{
+    background-color: rgba(45, 84, 106, 0.70);
 }
 
 .change2 {
@@ -134,6 +142,10 @@ h1 {
     height: 44px;
     background: rgba(42, 81, 103, 0.25);
     border-radius: 5px;
+    cursor: pointer;
+}
+.change2:hover{
+    background-color: rgba(45, 84, 106, 0.40);
 }
 
 .link {
@@ -150,6 +162,10 @@ h1 {
     height: 44px;
     background: rgba(42, 81, 103, 0.25);
     border-radius: 5px;
+    cursor: pointer;
+}
+.connect:hover{
+    background-color: rgba(45, 84, 106, 0.40);
 }
 
 .connect2 {
@@ -162,6 +178,10 @@ h1 {
     background: rgba(42, 81, 103, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    cursor: pointer;
+}
+.connect2:hover{
+    background-color: rgba(45, 84, 106, 0.70);
 }
 
 .img {
@@ -244,4 +264,8 @@ input {
     padding: 10px;
     background: rgba(42, 81, 103, 0.25);
     border-radius: 5px;
+    cursor: pointer;
+}
+input:hover{
+    background-color: rgba(45, 84, 106, 0.40) ;
 }

@@ -70,6 +70,10 @@ li {
 	border-radius: 20px;
 	margin-left: 75px;
 	padding: 0px 20px 0px 20px;
+	cursor: pointer;
+}
+li:hover{
+	background-color: #F1F1F1;
 }
 
 a {
