@@ -1,4 +1,4 @@
-from flask import Flask, send_file, request, jsonify
+from flask import Flask, send_file, request, redirect
 import openai
 
 from backend_script.transcribe import transcribe
@@ -40,7 +40,7 @@ def connect_to_pim_endpoint():
 
     handle_button_state(button_state)
 
-    return jsonify(success=True)
+    return redirect('http://localhost/pimWebsite/translate.php')
 
 
 def handle_button_state(button_state):
