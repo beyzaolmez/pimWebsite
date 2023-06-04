@@ -52,7 +52,7 @@
                     <textarea name="english" class="englishText" placeholder="Type to translate"></textarea>
                     <textarea name="dutch" class="dutchText"></textarea>
                 </div>
-                <input type="submit" name="submit" value="Translate!">
+                <input class="submit" type="submit" name="submit" value="Translate!">
             </form>
         </div>
     </div>
