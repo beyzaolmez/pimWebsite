@@ -262,6 +262,15 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
 }
+input{
+    margin-top: 30px;
+    font-size: 15px;
+    border-color: transparent;
+    padding: 10px;
+    background: rgba(42, 81, 103, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+}
 input:hover{
     background-color: rgba(45, 84, 106, 0.40) ;
 }
