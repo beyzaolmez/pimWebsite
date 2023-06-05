@@ -13,19 +13,19 @@
 </head>
 
 <body>
-<div id="container">
-    <header>
-        <div id="headerContainer">
-            <div id="logo">
-                <img src="img/logo.png" alt="logo">
-                <p> A.I. P.I.M. </p>
-            </div>
-            <ul>
-                <li> <a href="translateText.php"> translate  </a> </li>
-                <li> <a href="aboutUs.html"> about us  </a> </li>
-            </ul>
+<header>
+    <!--<div id="headerContainer">-->
+        <div id="logo">
+            <img src="img/logo.png" alt="logo">
+            <p> A.I. P.I.M. </p>
         </div>
-    </header>
+        <ul>
+            <li> <a href="translateText.php"> translate  </a> </li>
+            <li> <a href="aboutUs.html"> about us  </a> </li>
+        </ul>
+    <!--</div>-->
+</header>
+<div id="container">
     <div id="intro">
         <h2>Welcome,</h2>
         <h1>What do you want to translate?</h1>
@@ -50,7 +50,7 @@
             <form method="POST" action="Translate-text.php">
                 <div class="texts">
                     <textarea name="english" class="englishText" placeholder="Type to translate"></textarea>
-                    <textarea name="dutch" class="dutchText"></textarea>
+                    <div class ="dutch"></div>
                 </div>
                 <input class="submit" type="submit" name="submit" value="Translate!">
             </form>
