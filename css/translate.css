@@ -19,8 +19,7 @@ p {
     /* header */
 header {
     display: grid;
-    grid-column: 1/13;
-    grid-template-columns: inherit;
+    grid-template-columns: repeat(12, 1fr);
     background-color: rgba(42, 81, 103, 0.75);
 }
 
@@ -31,8 +30,11 @@ header {
 }*/
 
 #logo {
+    grid-column: 1/6;
     display: flex;
+    justify-content: center;
     align-items: center;
+    margin-right: 40px;
 }
 
 #logo > img {
@@ -49,6 +51,7 @@ header {
 } 
 
 ul {
+    grid-column: 7/13;
     display: flex;
     list-style-type: none;
 }
