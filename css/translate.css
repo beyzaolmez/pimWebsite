@@ -203,6 +203,12 @@ h1 {
     background-color: #D9D9D9;
     padding: 5px;
 }
+.languages > p{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Raleway;
+    font-size: 25px;
+}
 
 .text {
     margin: 7px 0px 7px 0px;
@@ -246,11 +252,16 @@ textarea {
     border-bottom-color: transparent;
 }
 
-.dutchText {
-    width: 50%;
+.dutch {
+    height: 441px;
+    width: 500px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
     background-color: #D9D9D9;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
+    border-bottom: transparent;
+    border-right: transparent;
+    border-left: transparent;
 }
 
 .submit {
@@ -321,8 +332,9 @@ input:hover{
         width: 85.5%;
         margin-left: 20px;
     }
-    .dutchText{
-        width: 85.5%;
+    .dutch{
+        width: 520px;
+        height: 400px;
         margin-left: 20px;
     }
     .submit{
