@@ -1,14 +1,16 @@
-from flask import Flask, send_file, request, redirect
+from flask import Flask, send_file, request, redirect, jsonify
 import openai
 
 from backend_script.transcribe import transcribe
 from operations import handle_button_click
+from flask_cors import CORS
 
 api_key_path = "txt/api-key.txt"
 with open(api_key_path, 'r') as files:
     openai.api_key = files.read()
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/transcribe', methods=['POST'])
@@ -41,6 +43,32 @@ def connect_to_pim_endpoint():
     handle_button_state(button_state)
 
     return redirect('http://localhost/pimWebsite/translate.php')
+
+
+@app.route('/web_translate', methods=['POST'])
+def web_translate_endpoint():
+    button_state = 'translate'
+
+    text = request.form['english']
+
+    # Write the user_text to a file
+    file_path = 'txt/transcription.txt'
+    with open(file_path, 'w') as file:
+        file.write(text)
+
+    # Handle the button state (including translation)
+    handle_button_click(button_state)
+
+    # Read the translated text from the output file
+    output_file_path = 'txt/output.txt'
+    with open(output_file_path, 'r') as file:
+        translated_text = file.read()
+
+    response = {
+        'translated_text': translated_text
+    }
+
+    return jsonify(response)
 
 
 def handle_button_state(button_state):

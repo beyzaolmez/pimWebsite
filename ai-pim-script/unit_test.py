@@ -1,30 +1,40 @@
-import unittest
-from unittest.mock import patch
-from backend_script import translate_text
+import pytest
+from unittest import mock
+from backend_script.gpt_translate import translate_text
 
 
-class TranslateTextTest(unittest.TestCase):
-    @patch('backend_script.requests.post')
-    def test_translate_text_success(self, mock_post):
-        mock_post.return_value.status_code = 200
-        mock_post.return_value.json.return_value = {
-            "choices": [
-                {
-                    "text": "Translated text"
-                }
-            ]
-        }
-
-        result = translate_text("path/to/file.txt")
-        self.assertEqual(result, "Translated text")
-
-    @patch('backend_script.requests.post')
-    def test_translate_text_failure(self, mock_post):
-        mock_post.return_value.status_code = 400
-
-        result = translate_text("path/to/file.txt")
-        self.assertIsNone(result)
+@pytest.fixture
+def mocked_requests_post():
+    with mock.patch('backend_script.gpt_translate.requests.post') as mock_post:
+        yield mock_post
 
 
-if __name__ == '__main__':
-    unittest.main()
+def test_translate_text_success(mocked_requests_post):
+    file_path = "txt/transcription.txt"
+    expected_translation = "Wat wil je vandaag?"
+
+    mock_response = mock.Mock()
+    mock_response.status_code = 200
+    mock_response.json.return_value = {
+        "choices": [
+            {"text": expected_translation}
+        ]
+    }
+    mocked_requests_post.return_value = mock_response
+
+    translation = translate_text(file_path)
+
+    mocked_requests_post.assert_called_once()
+    assert translation == expected_translation
+
+
+def test_translate_text_failure(mocked_requests_post):
+    mock_response = mock.Mock()
+    mock_response.status_code = 500
+    mocked_requests_post.return_value = mock_response
+
+    file_path = "txt/transcription.txt"
+    translation = translate_text(file_path)
+
+    mocked_requests_post.assert_called_once()
+    assert translation is None
