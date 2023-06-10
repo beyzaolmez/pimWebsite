@@ -33,6 +33,8 @@ def transcribe_endpoint():
 @app.route('/conn_pim', methods=['POST'])
 def connect_to_pim_endpoint():
     text = request.form['english']
+    if text == '':
+        text = 'What would you like to translate?'
 
     file_path = 'txt/transcription.txt'
     with open(file_path, 'w') as file:
@@ -50,6 +52,9 @@ def web_translate_endpoint():
     button_state = 'translate'
 
     text = request.form['english']
+
+    if text == '':
+        text = 'What would you like to translate?'
 
     # Write the user_text to a file
     file_path = 'txt/transcription.txt'

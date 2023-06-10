@@ -1,8 +1,8 @@
 from gtts import gTTS
-from backend_script.gpt_translate import translate_text
+from backend_script.gpt_translate import translate_text, translate_english_to_dutch
 from backend_script.gpt_converse_en_nl import en_to_nl, en_to_en
 
-VALID_BUTTON_STATES = ["translate", "en_nl_conversation", "en_en_conversation"]
+VALID_BUTTON_STATES = ["translate", "en_nl_conversation", "en_en_conversation", "translate_english_to_dutch"]
 current_button_state = None
 
 
@@ -24,11 +24,19 @@ def handle_button_click(button_type):
         with open("txt/output.txt", "w", encoding="utf-8") as file:
             file.write(translation)
         text_to_speech(translation, 'en')
+
+    elif button_type == "translate_english_to_dutch":
+        trans_english_to_dutch = translate_english_to_dutch("txt/transcription.txt")
+        with open("txt/output.txt", "w", encoding="utf-8") as file:
+            file.write(trans_english_to_dutch)
+        text_to_speech(trans_english_to_dutch, 'en')
+
     elif button_type == "en_nl_conversation":
         en_nl_conversation = en_to_nl("txt/transcription.txt")
         with open("txt/output.txt", "w", encoding="utf-8") as file:
             file.write(en_nl_conversation)
         text_to_speech(en_nl_conversation, 'nl')
+
     elif button_type == "en_en_conversation":
         en_en_conversation = en_to_en("txt/transcription.txt")
         with open("txt/output.txt", "w", encoding="utf-8") as file:

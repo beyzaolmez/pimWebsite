@@ -1,8 +1,8 @@
 import requests
 
 url = 'http://localhost:5000/transcribe'
-button_state = 'en_en_conversation'
-audio_file_path = 'audio/input/harvard.wav'
+button_state = 'translate_english_to_dutch'
+audio_file_path = 'audio/input/DUT_F_SimoneD.mp3'
 
 # Read the audio file data
 with open(audio_file_path, 'rb') as audio_file:
