@@ -17,7 +17,7 @@
     <header>
         <div id="headerContainer">
             <div id="logo">
-            <img src="img/logo.png" alt="logo">
+                <img src="img/logo.png" alt="logo">
                 <p> A.I. P.I.M. </p>
             </div>
             <ul>

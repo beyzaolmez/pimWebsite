@@ -16,7 +16,7 @@ p {
     color: black;
 }
 
-    /* header */
+/* header */
 header {
     display: grid;
     grid-column: 1/13;
@@ -42,10 +42,10 @@ header {
 }
 
 #logo > p {
-    font-size: 30px !important;
+    font-size: 1.875rem !important;
     letter-spacing: 0.2em;
     color: white;
-    margin-left: 32px;
+    margin: 1.25rem 1.25rem 1.25rem 2rem;
 } 
 
 ul {
@@ -58,13 +58,13 @@ li {
     align-items: center;
     background-color: white;
     border-radius: 20px;
-    margin-left: 75px;
-    padding: 0px 20px 0px 20px;
+    margin-left: 4.688rem;
+    padding: 0rem 1.25rem 0rem 1.25rem;
 }
 
-li > a {
+a {
     font-family: 'Raleway';
-    font-size: 25px;
+    font-size: 1.563rem;
     letter-spacing: 0.15em;
     text-decoration: none;
     color: rgba(42, 81, 103, 0.75);
