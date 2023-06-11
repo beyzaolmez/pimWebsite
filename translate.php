@@ -73,6 +73,7 @@
         <p> brought to you by team A </p>
     </footer>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
 
