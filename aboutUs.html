@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title> A.I.P.I.M. | About Us </title>
 	<link rel="stylesheet" href="css/aboutUs.css">
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -14,9 +15,24 @@
 				<img src="img/logo.png" alt="logo">
 				<p> A.I. P.I.M. </p>
 			</div>
-			<ul>
-				<li> <a href="translateText.php"> translate  </a> </li>
-				<li> <a href="aboutUs.html"> about us  </a> </li>
+			<div class="select-menu">
+				<div class="select-btn">
+					<img src="img/globe-icon.jpg" alt="logo">
+					<span class="sBtn-text">English</span>
+					<i class="bx bx-chevron-down"></i>
+				</div>
+				<ul class="options">
+					<li class="option">
+						<span class="option-text">English</span>
+					</li>
+					<li class="option">
+						<span class="option-text">Dutch</span>
+					</li>
+				</ul>
+			</div>
+			<ul class="nav">
+				<li class="pages"> <a class="page-link" href="translateText.php"> translate  </a> </li>
+				<li class="pages"> <a class="page-link" href="aboutUs.html"> about us  </a> </li>
 			</ul>
 		</div>
 	</header>
@@ -71,5 +87,6 @@
 		<p> brought to you by team A </p>
 	</footer>
 </div>
+<script src="script.js"></script>
 </body>
 </html>

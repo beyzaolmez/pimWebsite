@@ -10,22 +10,38 @@
     <meta charset="UTF-8">
     <title>Translate text</title>
     <link rel="stylesheet" href="css/translate.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 <div id="container">
     <header>
-        <div id="headerContainer">
-            <div id="logo">
-                <img src="img/logo.png" alt="logo">
-                <p> A.I. P.I.M. </p>
-            </div>
-            <ul>
-                <li> <a href="translateText.php"> translate  </a> </li>
-                <li> <a href="aboutUs.html"> about us  </a> </li>
-            </ul>
-        </div>
-    </header>
+		<div id="headerContainer">
+			<div id="logo">
+				<img src="img/logo.png" alt="logo">
+				<p> A.I. P.I.M. </p>
+			</div>
+			<div class="select-menu">
+				<div class="select-btn">
+					<img src="img/globe-icon.jpg" alt="logo">
+					<span class="sBtn-text">English</span>
+					<i class="bx bx-chevron-down"></i>
+				</div>
+				<ul class="options">
+					<li class="option">
+						<span class="option-text">English</span>
+					</li>
+					<li class="option">
+						<span class="option-text">Dutch</span>
+					</li>
+				</ul>
+			</div>
+			<ul class="nav">
+				<li class="pages"> <a class="page-link" href="translateText.php"> translate  </a> </li>
+				<li class="pages"> <a class="page-link" href="aboutUs.html"> about us  </a> </li>
+			</ul>
+		</div>
+	</header>
     <div id="intro">
         <h2>Welcome,</h2>
         <h1>What do you want to translate?</h1>
