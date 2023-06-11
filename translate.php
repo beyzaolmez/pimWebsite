@@ -3,6 +3,7 @@
         $english = filter_input(INPUT_POST, "english", FILTER_SANITIZE_SPECIAL_CHARS);
         $dutch = filter_input(INPUT_POST, "dutch", FILTER_SANITIZE_SPECIAL_CHARS);
     }
+    include "languages/config.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,16 +30,16 @@
 				</div>
 				<ul class="options">
 					<li class="option">
-						<span class="option-text">English</span>
+						<span class="option-text"><a class="option-text" href="aboutUs.php?lang=en"><?php echo $lang['lang_en'] ?></a></span>
 					</li>
 					<li class="option">
-						<span class="option-text">Dutch</span>
+						<span class="option-text"><a class="option-text" href="aboutUs.php?lang=nl"><?php echo $lang['lang_nl'] ?></a></span>
 					</li>
 				</ul>
 			</div>
 			<ul class="nav">
-				<li class="pages"> <a class="page-link" href="translateText.php"> translate  </a> </li>
-				<li class="pages"> <a class="page-link" href="aboutUs.html"> about us  </a> </li>
+				<li class="pages"> <a class="page-link" href="translateText.php"> <?php echo $lang['translate']; ?> </a> </li>
+				<li class="pages"> <a class="page-link" href="aboutUs.php"> <?php echo $lang['about us']; ?> </a> </li>
 			</ul>
 		</div>
 	</header>
@@ -73,7 +74,7 @@
         <p> brought to you by team A </p>
     </footer>
 </div>
-<script src="script.js"></script>
+<script src="dropdown.js"></script>
 </body>
 </html>
 
