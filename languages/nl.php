@@ -4,6 +4,8 @@
 		"lang_nl" => "Nederland",
 		"translate" => "vertalen",
 		"about us" => "over ons",
+        "footer" => "aangeboden door team A",
+        //from the about us page
         "h1" => "Ons doel in A.I. P.I.M.",
 		"h2" => "Waarom A.I. P.I.M.?",
         "h3" => "Over team A",
@@ -15,6 +17,10 @@
 		"p6" => "Het project houdt geen enkele vorm van commercialisering of winstoogmerk in, dus gebruikers hebben gratis toegang tot deze tool zonder verborgen kosten.",
         "p7" => "Team A bestaat uit zeven ICT-studenten die studeren aan NHL Stenden, Hogeschool.",
         "p8" => "Het team werkte aan dit project in de 4e periode van hun eerste jaar.",
-        "footer" => "aangeboden door team A"
+        //from the translate pages
+        "welcome" => "Welkom,",
+		"what" => "Wat wil je vertalen?",
+		"text" => "tekst",
+		"connect" => "maak verbinding met PIM"
 	);
 ?>
