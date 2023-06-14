@@ -17,7 +17,11 @@ p {
 }
 
     /* header */
-header {
+header{
+    grid-column: 1/13;
+}
+
+#headerContainer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-color: rgba(42, 81, 103, 0.75);
@@ -239,6 +243,7 @@ textarea {
     padding: 20px;
     height: 400px;
     resize: none;
+    background-color: pink;
 }
 
 .englishText {
@@ -255,7 +260,7 @@ textarea {
     border-bottom-color: transparent;
 }
 
-.dutch {
+.dutchText {
     height: 441px;
     width: 500px;
     border-style: solid;
@@ -321,10 +326,9 @@ input:hover{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
     }
-    header{
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-    }
+header{
+    grid-column: 1/7;
+}
     #intro{
         grid-column: 1/7;
         display:flex;
@@ -363,7 +367,7 @@ input:hover{
         width: 85.5%;
         margin-left: 20px;
     }
-    .dutch{
+    .dutchText{
         width: 520px;
         height: 400px;
         margin-left: 20px;
