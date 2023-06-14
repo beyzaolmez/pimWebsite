@@ -10,22 +10,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Translate text</title>
+    <title>Translate </title>
     <link rel="stylesheet" href="css/translate.css">
 </head>
 
 <body>
 <header>
-    <!--<div id="headerContainer">-->
-    <div id="logo">
-        <img src="img/logo.png" alt="logo">
-        <p> A.I. P.I.M. </p>
+    <div id="headerContainer">
+        <div id="logo">
+            <img src="img/logo.png" alt="logo">
+            <p> A.I. P.I.M. </p>
+        </div>
+        <ul>
+            <li> <a href="translateText.php"> translate  </a> </li>
+            <li> <a href="aboutUs.html"> about us  </a> </li>
+        </ul>
     </div>
-    <ul>
-        <li> <a href="translateText.php"> translate  </a> </li>
-        <li> <a href="aboutUs.html"> about us  </a> </li>
-    </ul>
-    <!--</div>-->
 </header>
 <div id="container">
     <div id="intro">
