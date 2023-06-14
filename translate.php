@@ -1,11 +1,4 @@
-<?php
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $english = filter_input(INPUT_POST, "english", FILTER_SANITIZE_SPECIAL_CHARS);
-//        $dutch = filter_input(INPUT_POST, "Dutch", FILTER_SANITIZE_SPECIAL_CHARS);
-        header('location: translate.php');
 
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
