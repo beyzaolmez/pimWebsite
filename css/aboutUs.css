@@ -13,18 +13,18 @@ body {
 h1, h2, h3 {
 	font-family: 'Raleway';
 	font-weight: medium;
-	font-size: 2.5rem;
+	font-size: 40px;
 	color: black;
 	display: grid;
 	grid-column: 2/10;
-	margin: 1.25rem;
+	margin: 20px;
 }
 
 p {
 	font-family: 'Raleway';
 	font-size: 30px;
 	color: black;
-	margin: 1.25rem;
+	margin: 20px;
 }
 
 /* header */
@@ -55,11 +55,11 @@ header {
 }
 
 #logo > p {
-	font-size: 1.875rem !important;
+	font-size: 30px !important;
 	letter-spacing: 0.2em;
 	color: white;
-	margin-left: 2rem;
-}
+	margin-left: 32px;
+} 
 
 .nav {
 	display: flex;
@@ -71,13 +71,13 @@ header {
 	align-items: center;
 	background-color: white;
 	border-radius: 20px;
-	margin-left: 4.688rem;
-	padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+	margin-left: 75px;
+	padding: 0px 20px 0px 20px;
 }
 
 .page-link {
 	font-family: 'Raleway';
-	font-size: 1.563rem;
+	font-size: 25px;
 	letter-spacing: 0.15em;
 	text-decoration: none;
 	color: #000;
@@ -158,7 +158,7 @@ footer {
 footer > p {
 	grid-column: 9/12;
 	color: white !important;
-	font-size: 0.938rem !important;
+	font-size: 15px !important;
 	letter-spacing: 0.15em !important;
 	text-align: right;
 }
@@ -174,7 +174,7 @@ footer > p {
 
 .flex-item-left {
 	width: 50%;
-	margin-bottom: 6.25rem;
+	margin-bottom: 100px;
 }
 
 .flex-item-left > img {
@@ -204,7 +204,7 @@ footer > p {
 	display: grid;
 	grid-column: 7/12;
 	position: absolute;
-	margin: 1.25rem;
+	margin: 20px;
 }
 
 #paragraphOne {
@@ -225,10 +225,10 @@ footer > p {
 }
 
 .flex-item-right-2 > img {
-	width: 26.063rem;
-	height: 16.75rem;
+	width: 417px;
+	height: 268px;
 	float: right;
-	margin: 0 3.125rem 3.125rem 3.125rem;
+	margin: 0 50px 50px 50px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -240,33 +240,33 @@ footer > p {
 	}
 	
 	p {
-		font-size: 0.938rem;
+		font-size: 15px;
 	}
 
 	/* header */
 	#logo > img {
-		width: 1.875rem;
-		height: 1.875rem;
+		width: 30px;
+		height: 30px;
 	}
 	
 	#logo > p {
-		font-size: 0.938rem !important;
-		margin-left: 0.625rem;
+		font-size: 15px !important;
+		margin-left: 10px;
 	}
 	
 	li {
-		margin-left: 1.25rem;
-		padding: 0 0.375rem 0 0.375rem;
+		margin-left: 20px;
+		padding: 0px 6px 0px 6px;
 	}
 	
 	a {
-		font-size: 0.625rem;
+		font-size: 10px;
 	}
 	/* header */
 
 	/* footer */
 	footer > p {
-		font-size: 0.625rem !important;
+		font-size: 10px !important;
 	}
 	/* footer */
 
@@ -277,11 +277,11 @@ footer > p {
 
 	.flex-item-left {
 		width: 100%;
-		margin-bottom: 1.875rem;
+		margin-bottom: 30px;
 	}
 
 	.flex-item-left > img {
-		width: 9.375rem;
+		width: 150px;
 		height: auto;
 	}
 	
@@ -328,9 +328,9 @@ footer > p {
 	}
 
 	.flex-item-right-2 > img {
-		width: 9.375rem;
+		width: 150px;
 		height: auto;
 		float: none;
-		margin: 0 3.125rem 3.125rem 3.125rem;
+		margin: 0 50px 50px 50px;
 	}
 }
