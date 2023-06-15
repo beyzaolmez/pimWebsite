@@ -85,17 +85,17 @@
 
     async function translateText(text) {
         var formData = new FormData();
-        formData.append('english', text);
+        formData.append('text', text);
 
         console.log(text)
 
-        var response = await fetch('http://localhost:5000/web_translate', {
+        var response = await fetch('http://127.0.0.1:5000/translate', {
             method: 'POST',
             body: formData
         });
 
         var result = await response.json();
-        return result.translated_text;
+        return result.data;
     }
 
 
