@@ -9,18 +9,6 @@
 
 <body>
 <div id="container">
-    <header>
-        <div id="headerContainer">
-            <div id="logo">
-                <img src="img/logo.png" alt="logo">
-                <p> A.I. P.I.M. </p>
-            </div>
-            <ul>
-                <li> <a href="translateText.php"> translate  </a> </li>
-                <li> <a href="aboutUs.html"> about us  </a> </li>
-            </ul>
-        </div>
-    </header>
     <div id="intro">
         <h2>Welcome,</h2>
         <h1>What do you want to translate?</h1>
@@ -51,9 +39,6 @@
             </form>
         </div>
     </div>
-    <footer>
-        <p> brought to you by team A </p>
-    </footer>
 </div>
 
 <script type="text/javascript">
