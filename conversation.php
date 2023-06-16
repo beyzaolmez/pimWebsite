@@ -5,7 +5,6 @@
     <title>Translate text</title>
     <link rel="stylesheet" href="css/conversation.css">
 </head>
-
 <body>
 
 <div id="container">
