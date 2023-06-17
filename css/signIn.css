@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(42, 81, 103, 0.75);
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+p {
+    font-family: 'Raleway';
+    font-size: 15px;
+    color: black;
+}
+#singIn{
+    grid-column: 6/13;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 205px;
+    padding-top: 205px;
+}
+.credentials{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    margin-bottom: 20px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 500px;
+}
+.submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input {
+    margin-right: 40px;
+    width: 500px;
+    height: 30px;
+    background: rgba(42, 81, 103, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border-color: black;
+    margin-top: 30px;
+    color: white;
+}
+
+input:hover{
+    background-color: rgba(45, 84, 106, 0.70);
+}
