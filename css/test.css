@@ -54,7 +54,7 @@ form{
     justify-content: space-around;
     margin-bottom: 20px;
 }
-.question{
+.test{
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
