@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -82,11 +81,6 @@
         var result = await response.json();
         return result.data;
     }
-
-
 </script>
-
-
-
 </body>
 </html>
