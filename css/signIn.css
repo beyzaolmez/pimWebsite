@@ -34,6 +34,18 @@ h1{
     padding-bottom: 62px;
     padding-top: 62px;
 }
+#signup{
+    grid-column: 6/13;
+    background-color: white;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 37px;
+    padding-top: 37px;
+}
 .credentials{
     display: flex;
     flex-direction: column;
