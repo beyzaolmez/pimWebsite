@@ -13,7 +13,7 @@ body {
 h1, h2, h3 {
 	font-family: 'Raleway';
 	font-weight: medium;
-	font-size: 40px;
+	font-size: 2.5rem;
 	color: black;
 	display: grid;
 	grid-column: 2/10;
@@ -22,7 +22,7 @@ h1, h2, h3 {
 
 p {
 	font-family: 'Raleway';
-	font-size: 30px;
+	font-size: 1.875rem;
 	color: black;
 	margin: 1.25rem;
 }
