@@ -1,3 +1,35 @@
+<?php
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+        $passwordCheck = filter_input(INPUT_POST, "passwordCheck");
+
+        /*try{
+            $dbhandler = new PDO("mysql:host=mysql; dbname=database; charset=utf8", "root", "qwerty");
+            $dbhandler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        }catch(Exception $ex){
+            echo "Connection failed: ".$ex->getMessage();
+        }
+
+        $stmt = "SELECT * FROM users WHERE email = :email_address;";
+        $sql = $dbhandler->prepare($stmt);
+        $sql->bindParam(":email_address", $email, PDO::PARAM_STR);
+        $sql->execute();
+        $dbhandler = null;
+
+        if($sql->rowCount() == 0){
+            echo "Email or password does not match";
+        }
+        else {
+            if ($details = $sql->fetch(PDO::FETCH_ASSOC)) {
+                if (password_verify($_POST["passwordCheck"], $details["password"])) {
+                    header("Location:translate_Text.php");
+                }
+            } else {
+                echo "Wrong email or password";
+            }
+        }*/
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,12 +44,12 @@
             <h1>Sign-in</h1>
             <form action="signIn.php" method="POST">
                 <div class="credentials">
-                    <textarea name="email" placeholder="Email"></textarea>
-                    <textarea name="password" placeholder="Password"></textarea>
+                    <input class="info" name="email" placeholder="Email">
+                    <input class="info" name="passwordCheck" placeholder="Password">
                     <label> Forgot your password?</label>
                 </div>
                 <div class="submit">
-                    <input type="submit" value="sign in">
+                    <input class="button" type="submit" value="sign in">
                 </div>
             </form>
             <p> Don't have an account? <a href="signup.php">Signup Here</a> </p>
