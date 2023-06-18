@@ -20,6 +20,7 @@
                     <input type="submit" value="sign in">
                 </div>
             </form>
+            <p> Don't have an account? <a href="signup.php">Signup Here</a> </p>
         </div>
     </div>
     </body>
