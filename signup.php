@@ -73,12 +73,12 @@
         <h1>Sign-in</h1>
         <form action="signup.php" method="POST">
             <div class="credentials">
-                <textarea name="fullName" placeholder="Full Name"></textarea>
-                <textarea name="email" placeholder="Email"></textarea>
-                <textarea name="password" placeholder="Password"></textarea>
+                <input class="info" name="fullName" placeholder="Full Name">
+                <input class="info" name="email" placeholder="Email">
+                <input class="info" name="password" placeholder="Password">
             </div>
             <div class="submit">
-                <input type="submit" value="sign up">
+                <input class="button" type="submit" value="sign up">
             </div>
         </form>
         <p> Already have an account? <a href="signIn.php">Login</a> </p>
