@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: 'Raleway';
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* header */
+header {
+	display: grid;
+	grid-column: 1/13;
+	grid-template-columns: inherit;
+	background-color: rgba(42, 81, 103, 0.75);
+}
+
+#headerContainer {
+	display: flex;
+	justify-content: space-between;
+	grid-column: 2/12;
+	align-items: center;
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+	margin-right: 550px;
+}
+
+#logo > img {
+	width: 60px;
+	height: 60px;
+	border-radius: 5px;
+}
+
+#logo > p {
+	font-size: 1.875rem !important;
+	letter-spacing: 0.2em;
+	color: white;
+	margin-left: 2rem;
+}
+
+.nav {
+	display: flex;
+	list-style-type: none;
+}
+
+.pages {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 20px;
+	margin-left: 4.688rem;
+	padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+}
+
+.page-link {
+	font-family: 'Raleway';
+	font-size: 1.563rem;
+	letter-spacing: 0.15em;
+	text-decoration: none;
+	color: #000;
+	padding: 0;
+}
+
+/* drop down menu */
+.select-menu {
+	font-family: Raleway;
+	font-size: 20px;
+	color: #000;
+}
+
+.select-menu img {
+	width: 30px;
+	padding-right: 1rem;
+}
+
+.sBtn-text {
+	padding-right: 1rem;
+}
+
+.select-menu .select-btn {
+	display: flex;
+	background: #fff;
+	border-radius: 5px;
+	align-items: center;
+	cursor: pointer;
+	padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+}
+
+/* arrow */
+.select-btn i {
+	font-size: 25px;
+	transition: 0.3s;
+}
+
+.select-menu.active .select-btn i {
+	transform: rotate(-180deg);
+}
+/* arrow ends */
+
+.select-menu .options{
+	position: absolute;
+	padding: 20px;
+	margin-top: 10px;
+	border-radius: 5px;
+	background: #fff;
+	display: none;
+}
+
+.select-menu.active .options {
+	display: block;
+}
+
+.options .option {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	border-radius: 5px;
+	background: #fff;
+	cursor: pointer;
+}
+
+.options .option:hover {
+	background: #F2F2F2;
+}
+	/* header ends */
