@@ -56,7 +56,7 @@ label{
     font-weight: normal;
     color: rgb(42, 81, 103, 0.75);
 }
-textarea{
+.info{
     margin-bottom: 20px;
     margin-top: 20px;
     border-left: none;
@@ -73,7 +73,7 @@ textarea{
     flex-direction: row;
     justify-content: center;
 }
-input {
+.button{
     margin-right: 40px;
     width: 500px;
     height: 50px;
@@ -88,9 +88,13 @@ input {
     font-size: 25px;
 }
 
-input:hover{
+button:hover{
     background-color: rgba(45, 84, 106, 0.70);
 }
 a{
     text-decoration: none;
+}
+ul{
+    color: white;
+    list-style: none;
 }
