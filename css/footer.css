@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+    /* footer */
+footer {
+    display: grid;
+    grid-column: 1/13;
+    grid-template-columns: inherit;
+    background-color: rgba(42, 81, 103, 0.75);
+    width: 100%;
+}
+
+footer > p {
+    grid-column: 9/12;
+    color: white !important;
+    font-size: 15px !important;
+    letter-spacing: 0.15em !important;
+    text-align: right;
+    font-family: 'Raleway';
+}
+    /* footer ends */
