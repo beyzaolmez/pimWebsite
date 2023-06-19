@@ -3,24 +3,30 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $questions = $_POST["questions"];
         $answers = $_POST["answers"];
+
+       echo '<button type="button">Show answers</button>';
     }
 
     $level = "beginner";
-    $endpoint = "http://127.0.0.1:5000/quiz";
+    // $endpoint = "http://127.0.0.1:5000/quiz";
+    $endpoint = "http://host.docker.internal:5000/quiz";
 
     $curl = curl_init($endpoint);
     curl_setopt($curl, CURLOPT_POST, true);
     curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query(array("level" => $level)));
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
+    curl_setopt($curl, CURLOPT_VERBOSE, true);
+
+
     $response = curl_exec($curl);
     curl_close($curl);
 
-    if($response === false) {
-        echo "Error: Failed to retrieve quiz questions";
+    if($response !== false) {
+        $questions = json_decode($response, true);
     }
     else{
-        $questions = json_decode($response, true);
+        echo "Error: Failed to retrieve quiz questions";
     }
 
     if($questions === null) {
@@ -44,12 +50,13 @@
                     When you finish the quiz, click check to get your result and the correct answers. Good luck!</h1>
                 <p>Tip: make sure the spelling is correct</p>
             </div>
-            <form action="selectQuiz.php" method="POST">
-                <?php foreach($questions as $index => $question){ ?>
-                    <input type="hidden" name="questions[]" value="<?php echo $question; ?>">
+            <form action="test.php" method="POST">
+                <?php foreach($questions['data'] as $index => $item){ ?>
                     <div class="test">
-                        <label for="questions[]"><?php echo $index + 1; ?>. <?php echo $question; ?></label>
-                        <textarea name="answers[<?php echo $question; ?>]"></textarea>
+                        <label for="question" <?php echo $index; ?>">
+                            <?php echo ((int)$index + 1) . '. ' . $item['question']; ?>
+                        </label>
+                        <textarea name="answers[]" id="question<?php echo $index; ?>"></textarea>
                     </div>
                 <?php } ?>
                 <div class="submit">
