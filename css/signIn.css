@@ -65,6 +65,18 @@ h3{
     padding-bottom: 84px;
     padding-top: 84px;
 }
+#resetPass{
+    grid-column: 6/13;
+    background-color: white;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 86px;
+    padding-top: 86px;
+}
 .credentials{
     display: flex;
     flex-direction: column;
