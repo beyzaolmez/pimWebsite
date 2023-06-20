@@ -22,6 +22,13 @@ h1{
     font-weight: bold;
     margin-bottom: 70px;
 }
+h3{
+    font-family: Raleway;
+    font-size: 23px;
+    font-weight: normal;
+    margin-top: -30px;
+    margin-bottom: 60px;
+}
 #singIn{
     grid-column: 6/13;
     background-color: white;
@@ -45,6 +52,18 @@ h1{
     align-items: center;
     padding-bottom: 37px;
     padding-top: 37px;
+}
+#recover{
+    grid-column: 6/13;
+    background-color: white;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 84px;
+    padding-top: 84px;
 }
 .credentials{
     display: flex;
