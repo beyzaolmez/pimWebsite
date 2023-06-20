@@ -1,40 +1,35 @@
 <?php
     $questions = [];
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $questions = $_POST["questions"];
-        $answers = $_POST["answers"];
 
-       echo '<button type="button">Show answers</button>';
+    if($_SERVER["REQUEST_METHOD"] !== "POST") {
+        $level = "beginner";
+        $endpoint = "http://host.docker.internal:5000/quiz";
+
+        $curl = curl_init($endpoint);
+        curl_setopt($curl, CURLOPT_POST, true);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query(array("level" => $level)));
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+        curl_setopt($curl, CURLOPT_VERBOSE, true);
+
+
+        $response = curl_exec($curl);
+        curl_close($curl);
+
+        if ($response !== false) {
+            $questions = json_decode($response, true);
+        } else {
+            echo "Error: Failed to retrieve quiz questions";
+            exit;
+        }
+        if ($questions === null) {
+            echo "Error: failed to parse quiz questions";
+            exit;
+        }
     }
 
-    $level = "beginner";
-    // $endpoint = "http://127.0.0.1:5000/quiz";
-    $endpoint = "http://host.docker.internal:5000/quiz";
-
-    $curl = curl_init($endpoint);
-    curl_setopt($curl, CURLOPT_POST, true);
-    curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query(array("level" => $level)));
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-
-    curl_setopt($curl, CURLOPT_VERBOSE, true);
-
-
-    $response = curl_exec($curl);
-    curl_close($curl);
-
-    if($response !== false) {
-        $questions = json_decode($response, true);
-    }
-    else{
-        echo "Error: Failed to retrieve quiz questions";
-    }
-
-    if($questions === null) {
-        echo "Error: Failed to parse quiz questions";
-    }
-    else{
         ?>
-        <!DOCTYPE html>
+            <!DOCTYPE html>
         <html>
         <head>
             <meta charset="UTF-8">
@@ -63,10 +58,58 @@
                     <input type="submit" value="Check">
                 </div>
             </form>
+
+            <?php
+
+            if($_SERVER["REQUEST_METHOD"] == "POST"){
+                //$question = $_POST["question"];
+                $answers = $_POST["answers"];
+
+                $score = 0;
+                $incorrectAnswers = array();
+
+                foreach ($questions['data'] as $index => $item){
+                    $correctAnswer = $item['answer'];
+                    $userAnswer = trim($answers[$index]);
+
+                    if(strtolower($userAnswer) === strtolower($correctAnswer)){
+                        $score++;
+                    }
+                    else{
+                        $incorrectAnswers[] = array(
+                                'questionNumber' => ($index + 1),
+                                'question' => $item['question'],
+                            'correctAnswer' => $correctAnswer,
+                            'userAnswer' => $userAnswer,
+                        );
+                    }
+                }
+                ?>
+                <p class='total'>Your score: <?php echo $score ?> out of <?php echo count($questions['data']);?></p>
+                <button class="button" onclick="showIncorrectAnswers()">Show incorrect answers</button>
+                <div id="incorrectAnswer">
+                    <h3>Incorrect answers: </h3>
+                    <ul>
+                        <?php foreach ($incorrectAnswers as $incorrect){ ?>
+                            <li><?php echo $incorrect['questionNumber'] . '. ' . $incorrect['correctAnswer']; ?></li>
+                        <?php } ?>
+                    </ul>
+                </div>
+                <script>
+                    function showIncorrectAnswers() {
+                        var container = document.getElementById("incorrectAnswer");
+                        container.style.display = "block";
+                    }
+                </script>
+            <?php
+            }
+            ?>
         </div>
-        </body>
-        </html>
+    </body>
+</html>
 <?php
-    }
-    ?>
+
+?>
+
+
 
