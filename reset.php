@@ -29,7 +29,7 @@
             }
         ?>
         </p>
-        <form action="#" method="POST">
+        <form action="resetAction.php" method="POST">
             <input type="hidden" name="selector" value="<?php echo $selector ?>">
             <input type="hidden" name="validator" value="<?php echo $validator ?>">
             
