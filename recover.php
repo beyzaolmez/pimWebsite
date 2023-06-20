@@ -19,7 +19,7 @@
             }
         ?>
         </p>
-        <form action="#" method="POST">
+        <form action="recoverAction.php" method="POST">
             <div class="credentials">
                 <input class="info" name="email" placeholder="Email">
             </div>
