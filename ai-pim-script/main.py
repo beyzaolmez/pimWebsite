@@ -18,7 +18,7 @@ def transcribe_endpoint():
     button_state = request.headers['Button-State']
     audio_data = request.get_data()
 
-    with open("audio/processing/audio_data.wav", "wb") as file:
+    with open("audio/processing/audio_data.wav", "wb")   as file:
         file.write(audio_data)
 
     transcribe("audio/processing/audio_data.wav")
