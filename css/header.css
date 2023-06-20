@@ -58,3 +58,25 @@ nav * {
 	height: 60px;
 	margin-left: 16px;
 }
+
+a {
+	background-image: linear-gradient(
+		to right,
+		black,
+		black 50%,
+		white 50%
+	);
+	background-size: 200% 100%;
+	background-position: -100%;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 0.3s ease-in-out;
+}
+
+a:before {
+	background: black;
+}
+
+a:hover {
+	background-position: 0;
+}
