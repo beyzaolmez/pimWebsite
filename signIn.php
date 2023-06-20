@@ -3,14 +3,14 @@
         $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
         $passwordCheck = filter_input(INPUT_POST, "passwordCheck");
 
-        /*try{
-            $dbhandler = new PDO("mysql:host=mysql; dbname=database; charset=utf8", "root", "qwerty");
+        try{
+            $dbhandler = new PDO("mysql:host=mysql; dbname=aipim; charset=utf8", "root", "qwerty");
             $dbhandler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }catch(Exception $ex){
             echo "Connection failed: ".$ex->getMessage();
         }
 
-        $stmt = "SELECT * FROM users WHERE email = :email_address;";
+        $stmt = "SELECT * FROM Users WHERE email_address = :email_address;";
         $sql = $dbhandler->prepare($stmt);
         $sql->bindParam(":email_address", $email, PDO::PARAM_STR);
         $sql->execute();
@@ -21,13 +21,13 @@
         }
         else {
             if ($details = $sql->fetch(PDO::FETCH_ASSOC)) {
-                if (password_verify($_POST["passwordCheck"], $details["password"])) {
+                if (password_verify($_POST["passwordCheck"], $details["user_password"])) {
                     header("Location:translate_Text.php");
                 }
             } else {
                 echo "Wrong email or password";
             }
-        }*/
+        }
     }
 ?>
 <!DOCTYPE html>
