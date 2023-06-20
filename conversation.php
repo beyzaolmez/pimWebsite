@@ -87,7 +87,7 @@
                 .then(response => response.json())
                 .then(data => {
                     // Handle the response from the server and create a chat bubble for the assistant's message
-                    const assistantMessage = data.message;
+                    const assistantMessage = data.data;
                     const assistantMessageBubble = document.createElement("div");
                     assistantMessageBubble.classList.add("message", "assistant-message", "active");
                     assistantMessageBubble.innerHTML = `<p>${assistantMessage}</p>`;
