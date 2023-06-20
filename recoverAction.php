@@ -63,7 +63,7 @@ if(isset($_POST["reset-request-submit"])) {
 	$mail->SMTPSecure = "tls";
 	$mail->Port = "587";
 	$mail->Username = "gemorskosnews@gmail.com";
-    $mail->Password = "frwumimtviqgjzgt"; // ENV FILE 
+    $mail->Password = "frwumimtviqgjzgt";
 	$mail->Subject = "Reset your password for Gemorskos";
 	$mail->setFrom('gemorskosnews@gmail.com');
 	$mail->isHTML(true);
