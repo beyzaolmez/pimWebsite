@@ -28,6 +28,7 @@
                 echo "Wrong email or password";
             }
         }
+
     }
 ?>
 <!DOCTYPE html>
@@ -42,6 +43,13 @@
     <div id="container">
         <div id="singIn">
             <h1>Sign-in</h1>
+            <?php
+                if (isset($_GET["newpwd"])) {
+                    if ($_GET["newpwd"] == "passwordupdated") {
+                        echo '<p>Reset successful!</p>';
+                    }
+                }
+            ?>
             <form action="signIn.php" method="POST">
                 <div class="credentials">
                     <input class="info" name="email" placeholder="Email">

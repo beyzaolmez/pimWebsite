@@ -1,7 +1,7 @@
 <?php
 
 //check if user got the this page by the right way
-if (isset($_POST["reset-password-submit"])) {
+if (isset($_POST["reset-request-submit"])) {
     $password = filter_input(INPUT_POST,"pwd");
     $passwordRepeat = filter_input(INPUT_POST,"pwd-repeat");
     $selector = filter_input(INPUT_POST,"selector");
@@ -18,13 +18,11 @@ if (isset($_POST["reset-password-submit"])) {
     }
     
     //connect to database
-    $dbname = "aipim";
-    $user = "root";
-    $pass = "qwerty";
-    try {
-    $dbhandler = new PDO('mysql:host=localhost;dbname=aipim', $user, $pass);
-    } catch (Exception $ex){
-        print $ex;
+    try{
+        $dbhandler = new PDO("mysql:host=mysql; dbname=aipim; charset=utf8", "root", "qwerty");
+        $dbhandler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    }catch(Exception $ex){
+        echo "Connection failed: ".$ex->getMessage();
     }
 
     $stmt = $dbhandler->prepare("SELECT * FROM Pass_reset WHERE pwdResetSelector=:selector");
@@ -43,7 +41,7 @@ if (isset($_POST["reset-password-submit"])) {
         if (!$result) {
             echo "You need to re-submit your reset request!";
         } else {                
-                $stmt = $dbhandler->prepare("SELECT * FROM users WHERE email_address=:tokenEmail");
+                $stmt = $dbhandler->prepare("SELECT * FROM Users WHERE email_address=:tokenEmail");
                 if (!$stmt) {
                     echo "There was an error!";
                     exit();
@@ -57,7 +55,7 @@ if (isset($_POST["reset-password-submit"])) {
                         exit();
                     } else {
                         
-                        $stmt = $dbhandler->prepare("UPDATE users SET user_password=:newPwdHash WHERE email_address=:tokenEmail");
+                        $stmt = $dbhandler->prepare("UPDATE Users SET user_password=:newPwdHash WHERE email_address=:tokenEmail");
                         if (!$stmt) {
                             echo "There was an error!";
                             exit();
@@ -75,7 +73,7 @@ if (isset($_POST["reset-password-submit"])) {
                             } else {
                                 $stmt->bindParam('tokenEmail', $tokenEmail,PDO::PARAM_STR);
                                 $stmt->execute();
-                                header("Location:login.php?newpwd=passwordupdated"); //reset page with an update message
+                                header("Location:signIn.php?newpwd=passwordupdated"); //reset page with an update message
                             }
                         }
                     }
@@ -84,6 +82,7 @@ if (isset($_POST["reset-password-submit"])) {
         }
     }  
  else {
-    header("Location: login.php");
+    //header("Location: login.php");
+     echo "IM HERE!!!!";
 }
 ?>

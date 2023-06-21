@@ -21,13 +21,7 @@
         ?>
         
         <p>
-        <?php
-            if (isset($_GET["reset"])) {
-                if ($_GET["reset"] == "success") {
-                    echo 'Reset successful! <a href="signIn.php">Go back to login</a>';
-                }
-            }
-        ?>
+
         </p>
         <form action="resetAction.php" method="POST">
             <input type="hidden" name="selector" value="<?php echo $selector ?>">

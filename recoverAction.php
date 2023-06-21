@@ -21,13 +21,11 @@ if(isset($_POST["reset-request-submit"])) {
     $expires = date("U") + 1800;
     
     //connect to database
-    $dbname = "aipim";
-    $user = "root";
-    $pass = "qwerty";
-    try {
-    $dbhandler = new PDO('mysql:host=localhost;dbname=aipim', $user, $pass);
-    } catch (Exception $ex){
-        print $ex;
+    try{
+        $dbhandler = new PDO("mysql:host=mysql; dbname=aipim; charset=utf8", "root", "qwerty");
+        $dbhandler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    }catch(Exception $ex){
+        echo "Connection failed: ".$ex->getMessage();
     }
     
     $userEmail = $_POST["email"];
@@ -80,5 +78,5 @@ if(isset($_POST["reset-request-submit"])) {
     } 
     
 } else {
-    header("Location: login.php");
+    //header("Location: login.php");
 }
