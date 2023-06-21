@@ -1,33 +1,39 @@
 <?php
+session_start();
 $questions = [];
 
 if($_SERVER["REQUEST_METHOD"] !== "POST") {
-    $level = "beginner";
-    $endpoint = "http://host.docker.internal:5000/quiz";
+    if(!isset($_SESSION['questions'])){
+        $level = "beginner";
+        $endpoint = "http://host.docker.internal:5000/quiz";
 
-    $curl = curl_init($endpoint);
-    curl_setopt($curl, CURLOPT_POST, true);
-    curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query(array("level" => $level)));
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $curl = curl_init($endpoint);
+        curl_setopt($curl, CURLOPT_POST, true);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query(array("level" => $level)));
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-    curl_setopt($curl, CURLOPT_VERBOSE, true);
+        curl_setopt($curl, CURLOPT_VERBOSE, true);
 
 
-    $response = curl_exec($curl);
-    curl_close($curl);
+        $response = curl_exec($curl);
+        curl_close($curl);
 
-    if ($response !== false) {
-        $questions = json_decode($response, true);
-    } else {
-        echo "Error: Failed to retrieve quiz questions";
-        exit;
+        if ($response !== false) {
+            $questions = json_decode($response, true);
+            $_SESSION['questions'] = $questions;
+        } else {
+            echo "Error: Failed to retrieve quiz questions";
+            exit;
+        }
+        if ($questions === null) {
+            echo "Error: failed to parse quiz questions";
+            exit;
+        }
     }
-    if ($questions === null) {
-        echo "Error: failed to parse quiz questions";
-        exit;
+    else{
+        $questions = $_SESSION['questions'];
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html>
