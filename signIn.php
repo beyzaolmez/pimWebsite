@@ -37,10 +37,15 @@
         <meta charset="UTF-8">
         <title>Sign in</title>
         <link rel="stylesheet" href="css/signIn.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     </head>
 
     <body>
     <div id="container">
+        <?php
+            include_once("header.html");
+        ?>
         <div id="singIn">
             <h1>Sign-in</h1>
             <?php
