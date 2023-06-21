@@ -14,11 +14,11 @@
     </div>
     <div id="buttons">
         <div class="change">
-            <img class="img" src="img/translate-icon.png" alt="text">
+            <img class="img" src="img/chat.png" alt="text">
             <a class="link" href="translateText.php"><p class="link">Text</p></a>
         </div>
         <div class="connect">
-            <img class="img" src="img/talking-head.png" alt="connect">
+            <img class="img" src="img/talk-icon.png" alt="connect">
             <a class="link" href="translate.php"><p class="link">Connect to Pim</p></a>
         </div>
     </div>
