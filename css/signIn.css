@@ -129,3 +129,31 @@ ul{
     color: white;
     list-style: none;
 }
+    @media screen and (max-width: 700px) {
+        main {
+            padding-bottom: 80Vw;
+        }
+        #singIn {
+            padding-bottom: 97px;
+            padding-top: 97px;
+        }
+
+        .credentials, .info, .button{
+            width: 247px;
+            font-size: 15px;
+        }
+
+        .button {
+            height: 35px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+}
