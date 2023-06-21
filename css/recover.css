@@ -35,7 +35,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 450px;
+    padding-bottom: 25Vw;
     padding-top: 62px;
 }
 
@@ -86,4 +86,27 @@ main {
 a {
     text-decoration: none;
     color: #5B86E5;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        padding-bottom: 80Vw;
+    }
+
+    .credentials, .info, .button{
+        width: 247px;
+        font-size: 15px;
+    }
+
+    .button {
+        height: 35px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
 }
