@@ -140,9 +140,11 @@ input:hover{
     background-color: rgba(45, 84, 106, 0.40) ;
 }
 
-.conversation {
+#conversation {
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    height: 400px;
 }
 
 .message {

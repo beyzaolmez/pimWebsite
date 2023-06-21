@@ -67,43 +67,44 @@
             messageInput.val('');
         });
 
-        function sendMessage(userInput) {
-            const conversationContainer = document.getElementById("conversation");
+    function sendMessage(userInput) {
+        // Create a new chat bubble for the user's message
+        const userMessageBubble = document.createElement("div");
+        userMessageBubble.classList.add("message", "user-message", "active");
+        userMessageBubble.innerHTML = `<p>${userInput}</p>`;
+        conversationContainer.append(userMessageBubble);
 
-            // Create a new chat bubble for the user's message
-            const userMessageBubble = document.createElement("div");
-            userMessageBubble.classList.add("message", "user-message", "active");
-            userMessageBubble.innerHTML = `<p>${userInput}</p>`;
-            conversationContainer.appendChild(userMessageBubble);
+        // Scroll to the bottom of the conversation container to show the latest message
+        conversationContainer.animate({ scrollTop: conversationContainer.prop("scrollHeight") }, 300);
 
-            // Send the message to the server using fetch
-            fetch("http://127.0.0.1:5000/conversation", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded"
-                },
-                body: `text=${encodeURIComponent(userInput)}`
+        // Send the message to the server using fetch
+        fetch("http://127.0.0.1:5000/conversation", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: `text=${encodeURIComponent(userInput)}`
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response from the server and create a chat bubble for the assistant's message
+                const assistantMessage = data.data;
+                const assistantMessageBubble = document.createElement("div");
+                assistantMessageBubble.classList.add("message", "assistant-message", "active");
+                assistantMessageBubble.innerHTML = `<p>${assistantMessage}</p>`;
+                conversationContainer.append(assistantMessageBubble);
+
+                // Scroll to the bottom of the conversation container to show the latest message
+                conversationContainer.animate({ scrollTop: conversationContainer.prop("scrollHeight") }, 300);
             })
-                .then(response => response.json())
-                .then(data => {
-                    // Handle the response from the server and create a chat bubble for the assistant's message
-                    const assistantMessage = data.data;
-                    const assistantMessageBubble = document.createElement("div");
-                    assistantMessageBubble.classList.add("message", "assistant-message", "active");
-                    assistantMessageBubble.innerHTML = `<p>${assistantMessage}</p>`;
-                    conversationContainer.appendChild(assistantMessageBubble);
+            .catch(error => {
+                // Handle any errors that occurred during the request
+                console.error("Error:", error);
+            });
 
-                    // Scroll to the bottom of the conversation container to show the latest message
-                    conversationContainer.scrollTop = conversationContainer.scrollHeight;
-                })
-                .catch(error => {
-                    // Handle any errors that occurred during the request
-                    console.error("Error:", error);
-                });
-
-            // Clear the input field
-            document.getElementById("messageInput").value = "";
-        }
+        // Clear the input field
+        document.getElementById("messageInput").value = "";
+    }
     });
 </script>
 
