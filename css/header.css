@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header * {
+	font-family: 'Raleway';
+	color: white;
+}
+
+header {
+	display: grid;
+	grid-column: 1/13;
+	grid-template-columns: inherit;
+	background-color: rgba(42, 81, 103, 0.75);
+}
+
+#headerContainer {
+	display: flex;
+	justify-content: space-between;
+	grid-column: 2/12;
+	align-items: center;
+}
+
+#logo {
+	font-size: 25px;
+	letter-spacing: 0.2em;
+}
+
+nav * {
+	display: flex;
+	list-style-type: none;
+	text-decoration: none;
+	font-size: 20px;
+	letter-spacing: 0.05em;
+	margin-right: 70px;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+}
+
+.profile * {
+	text-decoration: none;
+	font-size: 20px;
+	letter-spacing: 0.05em;
+}
+
+.profile > img {
+	height: 60px;
+	margin-left: 16px;
+}
+/*
+a {
+	background-image: linear-gradient(
+		to right,
+		black,
+		black 50%,
+		white 50%
+	);
+	background-size: 200% 100%;
+	background-position: -100%;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 0.3s ease-in-out;
+}
+
+a:before {
+	background: black;
+}
+
+a:hover {
+	background-position: 0;
+} */
+
+.mobilebutton{
+	display: none;
+}
+
+.mobilebutton img {
+	width: 30px; 
+	height: 30px; 
+}
+
+/* menu */
+.menu * {
+	font-family: Raleway;
+}
+
+.menu {
+    height: auto;
+    width: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding: 10px 0 10px 0;
+    transition: 0.5s;
+	background: rgba(42, 81, 103, 0.75);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+	position: absolute;
+  	right: 0;
+	top: 10Vw;
+}
+
+.menu a {
+    padding: 15px 25px;
+    display: block;
+    transition: 0.3s;
+	list-style-type: none;
+	text-decoration: none;
+	text-align: right;
+}
+
+.menu .close {
+    font-size: 15px;
+    text-align: right;
+}
+
+.menu-profile {
+	display: flex;
+	align-items: center;
+	padding-top: 50px;
+}
+
+.menu-profile img {
+	height: 60px;
+}
+
+@media screen and (max-width: 700px) {
+	.mobilebutton{
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.profile {
+		display: none;
+	}
+
+	header {
+		height: 15Vw;
+	}
+
+	.menu {
+		top: 15Vw;
+	}
+}
