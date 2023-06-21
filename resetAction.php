@@ -20,7 +20,7 @@ if (isset($_POST["reset-password-submit"])) {
     //connect to database
     $dbname = "aipim";
     $user = "root";
-    $pass = "";
+    $pass = "qwerty";
     try {
     $dbhandler = new PDO('mysql:host=localhost;dbname=aipim', $user, $pass);
     } catch (Exception $ex){
