@@ -18,7 +18,7 @@ footer {
     align-items: center;
 }
 
-footer > p {
+footer p {
     grid-column: 9/12;
     color: white !important;
     font-size: 20px !important;
@@ -86,4 +86,37 @@ footer > p {
 
 .options .option:hover {
     background: #f2f2f2;
+}
+
+@media screen and (max-width: 700px) {
+    footer p {
+        font-size: 10px !important;
+    }
+
+    .select-menu img {
+        width: 30px;
+        padding-right: 10px;
+    }
+
+    .sBtn-text {
+        font-size: 15px;
+        padding-right: 10px;
+    }
+
+    .select-btn i {
+        font-size: 15px;
+    }
+
+    .option-text {
+        font-size: 15px;
+    }
+
+    .select-menu .options {
+        padding: 10px;
+        margin-top: -200px;
+    }
+
+    .select-menu .select-btn {
+        padding: 10px;
+    }
 }
