@@ -8,6 +8,7 @@
 </head>
 <body>
     <div id="container">
+
     <header>
 		<div id="headerContainer">
 				<p id="logo"> A.I. P.I.M. </p>
@@ -26,7 +27,34 @@
 					<p> Welcome, <br> User </p> -->
 					<img src="img/profile-icon.png" alt="user icon">
 				</div>
+				<div class="mobilebutton"><span onclick="openMenu()"> <img src="img/menu.png" alt="menu icon"> </span></div>
 		</div>
 	</header>
+	<div id="menu" class="menu">
+        <a href="javascript:void(0)" class="close" onclick="closeMenu()">✖</a>
+        <a href="">Translate</a>
+        <a href="">Quiz</a>
+		<a href="">Chat</a>
+		<a href="">About</a>
+		<br>
+		<div class="menu-profile">
+			<!-- this is shown when user isn't logged in -->
+			<a href="">Sign in</a>
+			<!-- this is shown when user is logged in 
+			<p> Welcome, <br> User </p> -->
+			<img src="img/profile-icon.png" alt="user icon">
+		</div>
+    </div>
+
     </div>
 </body>
+<script>
+	function openMenu() {
+		document.getElementById("menu").style.width = "auto";
+	}
+
+	function closeMenu() {
+		document.getElementById("menu").style.width = "0";
+	}
+</script>
+</html>
