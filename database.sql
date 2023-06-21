@@ -11,7 +11,7 @@ CREATE TABLE `Users` (
    email_address VARCHAR(50) UNIQUE NOT NULL,
    user_password VARCHAR(60) NOT NULL,
    password_change_date TIMESTAMP,
-   CONSTRAINT PRIMARY KEY(user_id)
+   CONSTRAINT PRIMARY KEY (user_id)
 );
 
 -- Table Pass Reset
