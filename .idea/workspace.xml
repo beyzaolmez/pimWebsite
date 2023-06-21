@@ -5,9 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7db2a027-072a-4b88-883b-381125805c1b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/signIn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/recover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/signIn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/globe-icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/profile-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mailer/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mailer/PHPMailer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mailer/SMTP.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recover.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recoverAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resetAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signIn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pimWebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pimWebsite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/.idea/gpt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/audio/input/DUT_F_SimoneD.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/audio/input/harvard.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/audio/input/male.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/audio/output/output.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/audio/processing/audio_data.wav" beforeDir="false" afterPath="$PROJECT_DIR$/ai-pim-script/audio/processing/audio_data.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/backend_script/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/backend_script/gpt_converse_en_nl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/backend_script/gpt_translate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/backend_script/transcribe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai-pim-script/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/operation_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/output.wav" beforeDir="false" afterPath="$PROJECT_DIR$/ai-pim-script/output.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/test_main.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/tests/alt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/tests/whisper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/txt/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ai-pim-script/txt/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/txt/suggestion for rasberry.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/txt/transcription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ai-pim-script/txt/transcription.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-pim-script/unit_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/switch.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +168,7 @@
       <workItem from="1687173265487" duration="12442000" />
       <workItem from="1687245628261" duration="18021000" />
       <workItem from="1687345690740" duration="277000" />
-      <workItem from="1687345987709" duration="8502000" />
+      <workItem from="1687345987709" duration="9325000" />
     </task>
     <servers />
   </component>
