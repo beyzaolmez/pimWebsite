@@ -138,6 +138,11 @@ ul{
             padding-top: 97px;
         }
 
+        #signup {
+            padding-bottom: 73px;
+            padding-top: 73px;
+        }
+
         .credentials, .info, .button{
             width: 247px;
             font-size: 15px;
