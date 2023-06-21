@@ -33,6 +33,18 @@ if (isset($_POST['retry'])) {
     }
 }
 
+if (isset($_POST['end'])){
+    $end = retrieveQuizQuestions('beginner');
+
+    if ($end) {
+        // Store the retrieved questions in session
+        $_SESSION['quiz'] = $end;
+        unset($_SESSION['results']); // Clear previous results
+    }
+
+    header("Location: selectQuiz.php");
+}
+
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['retry'])) {
     $userAnswers = $_POST['answers'];
@@ -93,7 +105,7 @@ $questions = isset($_SESSION['quiz']) ? $_SESSION['quiz'] : retrieveQuizQuestion
     <?php } ?>
     <input type="submit" value="Submit">
     <button type="submit" name="retry" id="retryBtn">Retry</button>
-    <a href="selectQuiz.php">End</a>
+    <button type="submit" name="end" id="endBtn">end</button>
 
 </form>
 
@@ -151,24 +163,6 @@ $questions = isset($_SESSION['quiz']) ? $_SESSION['quiz'] : retrieveQuizQuestion
         html += '<button type="button" id="retryBtn">Retry</button>';
         return html;
     }
-
-    // Store user's answers in session before leaving the page
-    window.addEventListener('beforeunload', function() {
-        var answers = [];
-        var textInputs = document.querySelectorAll('input[type="text"]');
-        textInputs.forEach(function(input) {
-            answers.push(input.value);
-        });
-
-        // Send AJAX request to the quiz endpoint
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'http://127.0.0.1:5000/quiz', true);
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.send('level=beginner');
-
-        // Redirect to quizselect.php
-        window.location.href = 'quizselect.php';
-    });
 </script>
 </body>
 </html>
