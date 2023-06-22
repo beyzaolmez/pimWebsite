@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] !== "POST") {
 
         if ($response !== false) {
             $questions = json_decode($response, true);
-            $_SESSION['questions'] = $questions;
+            $questions = $_SESSION['questions'];
         } else {
             echo "Error: Failed to retrieve quiz questions";
             exit;
@@ -52,7 +52,7 @@ if($_SERVER["REQUEST_METHOD"] !== "POST") {
         <p>Tip: make sure the spelling is correct</p>
     </div>
     <form action="test.php" method="POST">
-        <?php foreach($questions['data'] as $index => $item){ ?>
+        <?php foreach($questions['data'] as $index => $item){?>
             <div class="test">
                 <label for="question" <?php echo $index; ?>">
                 <?php echo ((int)$index + 1) . '. ' . $item['question']; ?>
@@ -68,7 +68,8 @@ if($_SERVER["REQUEST_METHOD"] !== "POST") {
     <?php
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        //$question = $_POST["question"];
+        $questions = $_SESSION['questions'];
+        var_dump($questions);
         $answers = $_POST["answers"];
 
         $score = 0;
