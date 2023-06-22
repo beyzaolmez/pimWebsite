@@ -22,7 +22,12 @@
         else {
             if ($details = $sql->fetch(PDO::FETCH_ASSOC)) {
                 if (password_verify($_POST["passwordCheck"], $details["user_password"])) {
+                    session_start();
+                    $_SESSION['user_id'] = $details['user_id'];
+                    $_SESSION['user_name'] = $details['user_name'];
+                    header("Location: translate_Text.php");
                     header("Location:translate_Text.php");
+                    exit();
                 }
             } else {
                 echo "Wrong email or password";
