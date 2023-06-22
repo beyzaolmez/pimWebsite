@@ -31,30 +31,30 @@ if (isset($_POST['retry'])) {
         $_SESSION['quiz'] = $questions;
         unset($_SESSION['results']); // Clear previous results
     }
+} elseif (!isset($_SESSION['quiz'])) {
+    // Retrieve quiz questions if not already stored in session
+    $questions = retrieveQuizQuestions("beginner");
+
+    if ($questions) {
+        $_SESSION['quiz'] = $questions;
+    }
 }
 
-if (isset($_POST['end'])){
-    $end = retrieveQuizQuestions('beginner');
-
-    if ($end) {
-        // Store the retrieved questions in session
-        $_SESSION['quiz'] = $end;
-        unset($_SESSION['results']); // Clear previous results
-    }
-
+if (isset($_POST['end'])) {
     header("Location: selectQuiz.php");
+    exit();
 }
 
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['retry'])) {
     $userAnswers = $_POST['answers'];
     $questions = $_SESSION['quiz'];
-    $correctAnswers = array_column($questions['data'], 'answer');
+    $correctAnswers = isset($questions['data']) ? array_column($questions['data'], 'answer') : array();
 
     $results = array();
     foreach ($userAnswers as $index => $userAnswer) {
-        $questionText = $questions['data'][$index]['question'];
-        $correctAnswer = $correctAnswers[$index];
+        $questionText = isset($questions['data'][$index]['question']) ? $questions['data'][$index]['question'] : '';
+        $correctAnswer = isset($correctAnswers[$index]) ? $correctAnswers[$index] : '';
         $isCorrect = strtolower($userAnswer) === strtolower($correctAnswer);
 
         $result = array(
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['retry'])) {
 }
 
 // Retrieve or use the stored quiz questions from session
-$questions = isset($_SESSION['quiz']) ? $_SESSION['quiz'] : retrieveQuizQuestions("beginner");
+$questions = isset($_SESSION['quiz']) ? $_SESSION['quiz'] : array();
 ?>
 
 <!DOCTYPE html>
@@ -95,18 +95,19 @@ $questions = isset($_SESSION['quiz']) ? $_SESSION['quiz'] : retrieveQuizQuestion
 <h2>Welcome Username,</h2>
 <h1>Translate the following Dutch words to English:</h1>
 <form id="quizForm" method="POST">
-    <?php foreach ($questions['data'] as $index => $item) { ?>
-        <div class="question">
-            <label for="question<?php echo $index; ?>">
-                <?php echo $item['question']; ?>
-            </label>
-            <input type="text" name="answers[]" id="question<?php echo $index; ?>" value="<?php echo isset($_SESSION['results'][$index]['userAnswer']) ? $_SESSION['results'][$index]['userAnswer'] : ''; ?>">
-        </div>
-    <?php } ?>
-    <input type="submit" value="Submit">
+    <?php if (isset($questions['data']) && is_array($questions['data'])) {
+        foreach ($questions['data'] as $index => $item) { ?>
+            <div class="question">
+                <label for="question<?php echo $index; ?>">
+                    <?php echo $item['question']; ?>
+                </label>
+                <input type="text" name="answers[]" id="question<?php echo $index; ?>" value="<?php echo isset($_SESSION['results'][$index]['userAnswer']) ? $_SESSION['results'][$index]['userAnswer'] : ''; ?>" <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['retry'])) echo 'disabled'; ?>>
+            </div>
+        <?php }
+    } ?>
+    <input type="submit" value="Submit" id="submitBtn" <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['retry'])) echo 'disabled'; ?>>
     <button type="submit" name="retry" id="retryBtn">Retry</button>
-    <button type="submit" name="end" id="endBtn">end</button>
-
+    <button type="submit" name="end" id="endBtn">End</button>
 </form>
 
 <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['retry']) && isset($_SESSION['results'])) { ?>
@@ -145,6 +146,8 @@ $questions = isset($_SESSION['quiz']) ? $_SESSION['quiz'] : retrieveQuizQuestion
                 sessionStorage.setItem('quizQuestions', JSON.stringify(data));
                 sessionStorage.removeItem('results');
                 document.getElementById('quizForm').innerHTML = generateQuizQuestions(data);
+                document.getElementById('submitBtn').disabled = false;
+                document.getElementById('retryBtn').disabled = true;
             })
             .catch(function(error) {
                 console.error('Error:', error);
@@ -156,11 +159,11 @@ $questions = isset($_SESSION['quiz']) ? $_SESSION['quiz'] : retrieveQuizQuestion
         questions.data.forEach(function(item, index) {
             html += '<div class="question">';
             html += '<label for="question' + index + '">' + item.question + '</label>';
-            html += '<input type="text" name="answers[]" id="question' + index + '" value="">';
+            html += '<input type="text" name="answers[]" id="question' + index + '" value="" disabled>';
             html += '</div>';
         });
-        html += '<input type="submit" value="Submit">';
-        html += '<button type="button" id="retryBtn">Retry</button>';
+        html += '<input type="submit" value="Submit" id="submitBtn">';
+        html += '<button type="button" id="retryBtn" disabled>Retry</button>';
         return html;
     }
 </script>
