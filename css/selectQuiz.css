@@ -17,7 +17,12 @@ p {
     color: black;
 }
 
-a{
+.box1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.box2 a{
     text-decoration: none;
     color: white;
 }
