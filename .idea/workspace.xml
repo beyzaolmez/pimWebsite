@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1bae4b94-132f-4640-ba39-8f63a19bbee1" name="Changes" comment="" />
+=======
+    <list default="true" id="7db2a027-072a-4b88-883b-381125805c1b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.php" afterDir="false" />
+    </list>
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,26 +20,71 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="2RF7QnsoNzJa3akx42iDzFq7HbJ" />
+=======
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php 8.2.7\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/../../php" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2QTKR8iJUXSyyqP5qgT2xwM2ysS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+<<<<<<< HEAD
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+=======
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;quiz&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/pimWebsite&quot;,
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+<<<<<<< HEAD
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -48,12 +100,60 @@
       <workItem from="1686835265662" duration="1789000" />
       <workItem from="1686915445356" duration="1000" />
       <workItem from="1687181440740" duration="743000" />
+=======
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PHP&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\31621\PhpstormProjects\test_audio" />
+      <recent name="C:\xampp\htdocs\pimWebsite\img" />
+      <recent name="C:\xampp\htdocs\pimWebsite\ai-pim-script" />
+      <recent name="C:\xampp\htdocs\pimWebsite\ai-pim-script\tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\pimWebsite\ai-pim-script\tests" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7db2a027-072a-4b88-883b-381125805c1b" name="Changes" comment="" />
+      <created>1685608666474</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685608666474</updated>
+      <workItem from="1685608668291" duration="1788000" />
+      <workItem from="1685693409797" duration="3148000" />
+      <workItem from="1685907268464" duration="2851000" />
+      <workItem from="1685967353798" duration="1940000" />
+      <workItem from="1685993196313" duration="3232000" />
+      <workItem from="1686730018714" duration="174000" />
+      <workItem from="1686731824841" duration="1133000" />
+      <workItem from="1686733358387" duration="1726000" />
+      <workItem from="1686828583971" duration="8947000" />
+      <workItem from="1686905334086" duration="18181000" />
+      <workItem from="1687110895417" duration="4159000" />
+      <workItem from="1687173265487" duration="12442000" />
+      <workItem from="1687245628261" duration="18021000" />
+      <workItem from="1687345690740" duration="277000" />
+      <workItem from="1687345987709" duration="476000" />
+      <workItem from="1687433402754" duration="8940000" />
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -64,5 +164,10 @@
         </entry>
       </map>
     </option>
+=======
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
   </component>
 </project>
