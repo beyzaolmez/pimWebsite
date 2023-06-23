@@ -24,13 +24,8 @@
             <div class="checkLevel">
                 <h2><?php echo $lang['check']; ?></h2>
                 <div class="box1">
-<<<<<<< HEAD
-                    <h3>Do you want to know your Dutch level? <br> Take the following quiz:</h3>
-                    <p><a href="test.php">Level quiz</a></p>
-=======
                     <h3><?php echo $lang['check-h3']; ?></h3>
                     <p><?php echo $lang['level']; ?></p>
->>>>>>> 45836291dc5ff0528960a546adc1ef93a80f4cbb
                 </div>
             </div>
             <div class="levelQuiz">
@@ -38,15 +33,9 @@
                 <div class="box2">
                     <h3><?php echo $lang['take-h3']; ?></h3>
                     <ul>
-<<<<<<< HEAD
-                        <li><a href="test.php">Beginner</a></li>
-                        <li><a href="test.php">Intermediate</li>
-                        <li><a href="test.php">Advanced</a></li>
-=======
-                        <li><?php echo $lang['beginner']; ?></li>
-                        <li><?php echo $lang['mid']; ?></li>
-                        <li><?php echo $lang['advanced']; ?></li>
->>>>>>> 45836291dc5ff0528960a546adc1ef93a80f4cbb
+                        <li><a href="test.php?level=beginner"><?php echo $lang['beginner']; ?></a></li>
+                        <li><a href="test.php?level=mid"><?php echo $lang['mid']; ?> </a></li>
+                        <li><a href="test.php?level=advanced"><?php echo $lang['advanced']; ?></a></li>
                     </ul>
                 </div>
             </div>

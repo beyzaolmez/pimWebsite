@@ -25,7 +25,7 @@
                     session_start();
                     $_SESSION['user_id'] = $details['user_id'];
                     $_SESSION['user_name'] = $details['user_name'];
-                    header("Location:translate_Text.php");
+                    header("Location:translateText.php");
                     exit();
                 }
             } else {
