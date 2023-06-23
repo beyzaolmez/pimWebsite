@@ -20,7 +20,7 @@
 	<h1> <?php echo $lang['h1']; ?> </h1>
 	<div id="sectionOne">
 		<div class="flex-item-left">
-			<img src="https://fakeimg.pl/600x400/D9D9D9/909090?text=placeholder&font=noto-serif" alt="placeholder">
+			<img src="img/blenderSketch.jpeg" alt="placeholder">
 		</div>
 		<div class="flex-item-right">
 			<p> <?php echo $lang['p1']; ?> </p> 
@@ -30,7 +30,7 @@
 
 	<div id="frame">  
 		<p> <?php echo $lang['p3'] ?> </p>
-		<img src="https://fakeimg.pl/600x400/D9D9D9/909090?text=placeholder&font=noto-serif" alt="placeholder">
+		<img src="img/PIM%20final.jpeg" alt="placeholder">
 	</div>
 	<p id="paragraphOne"> <?php echo $lang['p4']; ?> </p>
 
