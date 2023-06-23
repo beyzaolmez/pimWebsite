@@ -1,5 +1,9 @@
 <?php
     include "languages/config.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $english = filter_input(INPUT_POST, "english", FILTER_SANITIZE_SPECIAL_CHARS);
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -78,6 +82,13 @@
         var translatedDiv = document.querySelector(".dutchText");
         translatedDiv.textContent = ""; // Clear previous text
 
+        // Copy the CSS properties from English textarea to Dutch text container
+        var computedStyle = window.getComputedStyle(textarea);
+        var cssProperties = ["font-family", "font-size", "letter-spacing", "color"];
+        cssProperties.forEach(property => {
+            translatedDiv.style[property] = computedStyle[property];
+        });
+
         var translatedText = await translateText(text); // Wait for translation to complete
 
         var i = 0;
@@ -94,13 +105,15 @@
         return false; // Prevent form submission
     }
 
+
+
     async function translateText(text) {
         var formData = new FormData();
         formData.append('text', text);
 
         console.log(text)
 
-        var response = await fetch('http://host.docker.internal:5000/ll/translate', {
+        var response = await fetch('http://127.0.0.1:5000/ll/translate', {
             method: 'POST',
             body: formData
         });
