@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+p {
+    font-family: 'Raleway';
+    font-size: 15px;
+    color: black;
+}
+
+.box1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.box2 a{
+    text-decoration: none;
+    color: white;
+}
+
+#intro {
+    grid-column: 2/8;
+}
+
+.first {
+    font-size: 30px;
+    font-weight: normal;
+    font-family: Raleway;
+}
+
+.second {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: Raleway;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Raleway';
+}
+
+.checkLevel {
+    grid-column: 2/6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.levelQuiz {
+    grid-column: 8/12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box1 {
+    background-color: rgb(42, 81, 103, 0.75);
+    padding-bottom: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3%;
+}
+
+.box2 {
+    background-color: rgb(42, 81, 103, 0.75);
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3%;
+}
+
+.box2 ul {
+    text-align: center;
+    list-style: none;
+    color: white;
+}
+
+.box1, .box2 {
+    margin-bottom: 100px;
+}
+
+.box2 li {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+p {
+    color: white;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+h3 {
+    color: white;
+    font-size: 35px;
+    font-weight: normal;
+    margin-left: 55px;
+    margin-right: 30px;
+    text-align: center;
+}
