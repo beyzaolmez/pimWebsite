@@ -88,6 +88,9 @@ textarea{
     margin-bottom: 30px;
     margin-top: 30px;
 }
+.button:hover{
+    background-color: rgba(45, 84, 106, 0.70);
+}
 #incorrectAnswer{
     grid-column: 3/10;
     background-color: #D9D9D9;
