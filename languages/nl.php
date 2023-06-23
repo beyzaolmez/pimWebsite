@@ -47,9 +47,9 @@
         "take" => "Doe een quiz",
         "take-h3" => "Kent u uw niveau Nederlands al? <br> Selecteer een quiz:",
         "beginner" => "Beginner",
-        "mid" => "gemiddeld",
+        "mid" => "Gemiddeld",
         "advanced" => "Geavanceerd",
-        "explanation" => "Vertaal de volgende Nederlandse woorden naar het Engels in de daarvoor bestemde vakken. Wanneer u klaar bent met de quiz, klikt u op controleren om uw resultaat en de juiste antwoorden te krijgen. Succes!",
+        "explanation" => "Vertaal de volgende Nederlandse woorden naar het Engels in de daarvoor bestemde plekken. Wanneer u klaar bent met de quiz, klikt u op controleren om uw resultaat en de juiste antwoorden te zien. Succes!",
         "tip" => "Tip: zorg ervoor dat de spelling correct is."
 	);
 ?>
