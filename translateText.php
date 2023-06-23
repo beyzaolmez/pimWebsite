@@ -43,7 +43,7 @@
                     <textarea name="english" class="englishText" placeholder="Type to translate"></textarea>
                     <div class="dutchText"></div>
                 </div>
-                <input type="submit" name="submit" value="Translate!" onclick="runTypewriterEffect(event)">
+                <input type="submit" name="submit" value="<?php echo $lang["Translate"]; ?>!" onclick="runTypewriterEffect(event)">
             </form>
         </div>
     </div>
@@ -64,7 +64,7 @@
     </ul>
     </div>
     <p> <?php echo $lang['footer']; ?> </p>
-</footer>
+    </footer>
 </div>
 <script src="dropdown.js"></script>
 <script type="text/javascript">

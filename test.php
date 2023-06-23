@@ -1,4 +1,7 @@
 <?php
+    include "languages/config.php";
+?>
+<?php
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -51,15 +54,20 @@ $userAnswers = $_SESSION['user_answers'] ?? array();
     <meta charset="UTF-8">
     <title>Test</title>
     <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 <div id="container">
+
+<?php include_once "header.php"; ?>
+
     <div id="intro">
-        <h2 class="first">Welcome Username,</h2>
-        <h1 class="second">Translate the following Dutch words to English in the provided boxes.
-            When you finish the quiz, click check to get your result and the correct answers. Good luck!</h1>
-        <p>Tip: make sure the spelling is correct</p>
+        <h2 class="first"><?php echo $lang['welcome']; ?></h2>
+        <h1 class="second"> <?php echo $lang['explanation']; ?> </h1>
+        <p><?php echo $lang['tip']; ?></p>
     </div>
     <form action="test.php" method="POST">
         <?php
@@ -136,7 +144,25 @@ $userAnswers = $_SESSION['user_answers'] ?? array();
         }
     }
     ?>
+    <footer>
+    <div class="select-menu">
+    <div class="select-btn">
+        <img src="img/globe-icon.jpg" alt="logo">
+        <span class="sBtn-text">English</span>
+        <i class="bx bx-chevron-up"></i>
+    </div>
+    <ul class="options">
+        <li class="option">
+        <span class="option-text"><a class="option-text" href="test.php?lang=en"><?php echo $lang['lang_en']; ?></a></span>
+        </li>
+        <li class="option">
+        <span class="option-text"><a class="option-text" href="test.php?lang=nl"><?php echo $lang['lang_nl']; ?></a></span>
+        </li>
+    </ul>
+    </div>
+    <p> <?php echo $lang['footer']; ?> </p>
+    </footer>
 </div>
 </body>
-
+<script src="dropdown.js"></script>
 </html>

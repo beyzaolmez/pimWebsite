@@ -49,7 +49,8 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
 }
-.change:hover{
+
+.change:hover {
     background-color: #2A5167B0;
 }
 
@@ -65,7 +66,8 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
 }
-.connect:hover{
+
+.connect:hover {
     background-color: #2A516760;
 }
 
@@ -88,6 +90,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 70px;
+    margin-top: 30px;
 }
 
 .conversation-wrapper {
@@ -120,12 +124,12 @@ h1 {
     cursor: pointer;
 }
 
-.smaller-box{
+.smaller-box {
     border: 2px blue dashed;
     width: 93%;
 }
 
-input{
+input {
     margin-top: 30px;
     font-size: 15px;
     border-color: transparent;
@@ -136,7 +140,7 @@ input{
     cursor: pointer;
 }
 
-input:hover{
+input:hover {
     background-color: rgba(45, 84, 106, 0.40) ;
 }
 
@@ -153,8 +157,6 @@ input:hover{
     align-items: center;
     margin-bottom: 10px;
 }
-
-
 
 .message p {
     margin: 7px 10px;
@@ -173,7 +175,7 @@ input:hover{
     justify-content: flex-end;
 }
 
-.user-message p{
+.user-message p {
     border-radius: 10px 0 0 0;
 }
 
@@ -183,13 +185,13 @@ input:hover{
     justify-content: flex-start;
 }
 
-.bot-message p{
+.bot-message p {
     background-color: #007AFF;
     justify-content: flex-start;
     border-radius: 10px 0 0 0;
 }
 
-#submitBtn{
+#submitBtn {
     margin-top: 30px;
     border: none;
     cursor: pointer;
@@ -197,16 +199,17 @@ input:hover{
     padding: 0;
 }
 
-#submitBtn img{
+#submitBtn img {
     width: 39px;
     height: 39px;
     border-radius: 5px;
 }
 
-.assistant-message p{
+.assistant-message p {
     background-color: #007AFF;
     border-radius: 10px 0 0 0;
 }
+
 @keyframes swoosh {
     0% {
         opacity: 0;

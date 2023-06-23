@@ -22,10 +22,10 @@
         "p2" => "You receive a spoken translation in real time of the text or speech inputted.",
 		"p3" => "The voice of P.I.M is a synthesized voice from a real Dutch person so it helps with listening as you get used to the Dutch accent.",
         "p4" => "As your Dutch level improves, the translations will be given with more complex and sophisticated vocabulary so that you can improve your Dutch vocabulary and maintain more complex and real life like conversations.",
-        "p5" => "Traditional translators can often be boring and feel disconnected from the language-learning experience. With a personalized translator that has a sense of personality, users can have a more engaging and enjoyable learning experience that can help them stay motivated to learn the language.",
+        "p5" => "Traditional translators can often be boring and make you feel disconnected from the language-learning experience. With a personalized translator that has a sense of personality, users can have a more engaging and enjoyable learning experience that can help them stay motivated to learn the language.",
 		"p6" => "The project does not involve any form of commercialization or profit-making, so users can access this tool for free without any hidden costs.",
         "p7" => "Team A consists of seven IT students studying in NHL Stenden, University of Applied Sciences.",
-        "p8" => "The team worked on this project in the 4th period of their first year.",
+        "p8" => "The team worked on this project in the 4th period of the first year.",
         
         //from the translate pages
         "welcome" => "Welcome,",
@@ -36,6 +36,20 @@
         //from the conversation page
         "welcome" => "Welcome,",
 		"what2" => "What do you want to talk about?",
-		"connect" => "Connect to Pim"
+		"connect" => "Connect to Pim",
+
+        //from the quiz pages
+        "welcome" => "Welcome,",
+		"what3" => "What quiz do you want to take?",
+        "check" => "Check your level",
+        "check-h3" => "Do you want to know your Dutch level? <br> Take the following quiz:",
+        "level" => "Level quiz",
+        "take" => "Take a quiz",
+        "take-h3" => "Do you already know your Dutch level? <br> Select a quiz:",
+        "beginner" => "Beginner",
+        "mid" => "Intermediate",
+        "advanced" => "Advanced",
+        "explanation" => "Translate the following Dutch words to English in the provided boxes. When you finish the quiz, click check to get your result and the correct answers. Good luck!",
+        "tip" => "Tip: make sure the spelling is correct."
 	);
 ?>
