@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+footer {
+    display: grid;
+    grid-column: 1/13;
+    grid-template-columns: inherit;
+    background-color: rgba(42, 81, 103, 0.75);
+    align-items: center;
+}
+
+footer p {
+    grid-column: 9/12;
+    color: white !important;
+    font-size: 20px !important;
+    letter-spacing: 0.1em !important;
+    text-align: right;
+    font-family: 'Raleway';
+}
+
+.select-menu {
+    font-family: Raleway;
+    font-size: 20px;
+    color: #000;
+    grid-column: 2/3;
+    margin: 10px;
+}
+
+.select-menu img {
+    width: 35px;
+    padding-right: 1rem;
+}
+
+.sBtn-text {
+    padding-right: 1rem;
+}
+
+.select-menu .select-btn {
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+}
+
+.select-btn i {
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.select-menu.active .select-btn i {
+    transform: rotate(180deg);
+}
+
+.select-menu .options {
+    position: absolute;
+    padding: 20px;
+    margin-top: -250px; /* Adjust this value as needed */
+    border-radius: 5px;
+    background: #fff;
+    display: none;
+}
+
+.select-menu.active .options {
+    display: block;
+}
+
+.options .option {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.options .option:hover {
+    background: #f2f2f2;
+}
+
+@media screen and (max-width: 700px) {
+    footer p {
+        font-size: 10px !important;
+    }
+
+    .select-menu img {
+        width: 30px;
+        padding-right: 10px;
+    }
+
+    .sBtn-text {
+        font-size: 15px;
+        padding-right: 10px;
+    }
+
+    .select-btn i {
+        font-size: 15px;
+    }
+
+    .option-text {
+        font-size: 15px;
+    }
+
+    .select-menu .options {
+        padding: 10px;
+        margin-top: -200px;
+    }
+
+    .select-menu .select-btn {
+        padding: 10px;
+    }
+}
