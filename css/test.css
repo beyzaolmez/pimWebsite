@@ -42,6 +42,7 @@ input {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     border-color: transparent;
+    margin-bottom: 20px;
 }
 
 input:hover{
@@ -76,20 +77,6 @@ textarea{
 }
 .total{
     grid-column: 2/6;
-}
-.button{
-    grid-column: 2/5;
-    width: 200px;
-    height: 44px;
-    background: rgba(42, 81, 103, 0.5);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    border-color: transparent;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-.button:hover{
-    background-color: rgba(45, 84, 106, 0.70);
 }
 #incorrectAnswer{
     grid-column: 3/10;
