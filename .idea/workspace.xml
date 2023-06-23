@@ -4,6 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <list default="true" id="1bae4b94-132f-4640-ba39-8f63a19bbee1" name="Changes" comment="" />
+=======
+    <list default="true" id="7db2a027-072a-4b88-883b-381125805c1b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.php" afterDir="false" />
+    </list>
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
+=======
     <list default="true" id="7db2a027-072a-4b88-883b-381125805c1b" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
@@ -66,6 +76,7 @@
       <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/switch.png" beforeDir="false" />
     </list>
+>>>>>>> d8ef044d29a8941d699a66aecac6163baa49c27b
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +85,11 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d8ef044d29a8941d699a66aecac6163baa49c27b
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -93,25 +109,48 @@
       </map>
     </option>
   </component>
+<<<<<<< HEAD
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
+=======
+>>>>>>> d8ef044d29a8941d699a66aecac6163baa49c27b
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <component name="ProjectId" id="2RF7QnsoNzJa3akx42iDzFq7HbJ" />
+=======
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php 8.2.7\php.exe">
+=======
   <component name="PhpWorkspaceProjectConfiguration">
+>>>>>>> d8ef044d29a8941d699a66aecac6163baa49c27b
     <include_path>
       <path value="$PROJECT_DIR$/../../php" />
     </include_path>
   </component>
   <component name="ProjectId" id="2QTKR8iJUXSyyqP5qgT2xwM2ysS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+<<<<<<< HEAD
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
+=======
+>>>>>>> d8ef044d29a8941d699a66aecac6163baa49c27b
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+<<<<<<< HEAD
+<<<<<<< HEAD
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+=======
+=======
+>>>>>>> d8ef044d29a8941d699a66aecac6163baa49c27b
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -120,11 +159,36 @@
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;quiz&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+<<<<<<< HEAD
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/pimWebsite&quot;,
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
+=======
     &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/test_audio&quot;,
+>>>>>>> d8ef044d29a8941d699a66aecac6163baa49c27b
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+<<<<<<< HEAD
+<<<<<<< HEAD
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bae4b94-132f-4640-ba39-8f63a19bbee1" name="Changes" comment="" />
+      <created>1686833966805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686833966805</updated>
+      <workItem from="1686833969912" duration="2000" />
+      <workItem from="1686835265662" duration="1789000" />
+      <workItem from="1686915445356" duration="1000" />
+      <workItem from="1687181440740" duration="743000" />
+=======
+=======
+>>>>>>> d8ef044d29a8941d699a66aecac6163baa49c27b
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -168,15 +232,40 @@
       <workItem from="1687173265487" duration="12442000" />
       <workItem from="1687245628261" duration="18021000" />
       <workItem from="1687345690740" duration="277000" />
+<<<<<<< HEAD
+      <workItem from="1687345987709" duration="476000" />
+      <workItem from="1687433402754" duration="8940000" />
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
+=======
       <workItem from="1687345987709" duration="9325000" />
+>>>>>>> d8ef044d29a8941d699a66aecac6163baa49c27b
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+=======
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+>>>>>>> 65b0198bb65ceb1f668c52523cd1d7df7901952d
+=======
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+>>>>>>> d8ef044d29a8941d699a66aecac6163baa49c27b
   </component>
 </project>
