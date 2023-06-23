@@ -1,7 +1,7 @@
 <?php
 	$lang = array(
         "lang_en" => "Engels",
-		"lang_nl" => "Nederland",
+		"lang_nl" => "Nederlands",
 
         //header
 		"Translate" => "Vertalen",
@@ -9,7 +9,7 @@
         "Chat" => "Chatten",
         "About" => "Over ons",
         "welcome" => "Welkom,",
-        "signIn" => "Sign in",
+        "signIn" => "Inloggen",
         
         //footer
         "footer" => "aangeboden door team A",
@@ -22,10 +22,10 @@
         "p2" => "U ontvangt in realtime een gesproken vertaling van de ingevoerde tekst of spraak.",
 		"p3" => "De stem van P.I.M is een gesynthetiseerde stem van een echte Nederlander, dus het helpt bij het luisteren terwijl je went aan het Nederlandse accent.",
         "p4" => "Naarmate uw Nederlandse niveau verbetert, zullen de vertalingen worden gegeven met een complexere en geavanceerdere woordenschat, zodat u uw Nederlandse woordenschat kunt verbeteren en meer complexe en levensechte gesprekken kunt voeren.",
-        "p5" => "Traditionele vertalers zijn vaak saai en voelen zich niet betrokken bij het leren van een taal. Met een gepersonaliseerde vertaler die een gevoel van persoonlijkheid heeft, kunnen gebruikers een boeiendere en plezierigere leerervaring hebben die hen kan helpen gemotiveerd te blijven om de taal te leren.",
-		"p6" => "Het project houdt geen enkele vorm van commercialisering of winstoogmerk in, dus gebruikers hebben gratis toegang tot deze tool zonder verborgen kosten.",
-        "p7" => "Team A bestaat uit zeven ICT-studenten die studeren aan NHL Stenden, Hogeschool.",
-        "p8" => "Het team werkte aan dit project in de 4e periode van hun eerste jaar.",
+        "p5" => "Traditionele vertalers kunnen vaak saai zijn en geven je het gevoel dat je niet betrokken bent bij het leren van een taal. Met een gepersonaliseerde vertaler die een gevoel geeft van een persoonlijkheid, kunnen gebruikers een boeiendere en plezierigere leerervaring hebben die hen kan helpen gemotiveerd te blijven om de taal te leren.",
+		"p6" => "Het project houdt geen enkele vorm van commercialisering of poging tot winstgevendheid in, dus gebruikers hebben gratis toegang tot dit hulpmiddel zonder verborgen kosten.",
+        "p7" => "Team A bestaat uit zeven ICT-studenten die studeren bij NHL Stenden, Hogeschool.",
+        "p8" => "Het team werkte aan dit project in de 4e periode van het eerste jaar.",
 
         //from the translate pages
         "welcome" => "Welkom,",
