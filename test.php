@@ -41,7 +41,6 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     }
 }
 
-// Retrieve user's previous answers from the session if available
 $userAnswers = $_SESSION['user_answers'] ?? array();
 
 ?>
@@ -100,7 +99,6 @@ $userAnswers = $_SESSION['user_answers'] ?? array();
             $questions = $_SESSION["questions"];
             $answers = $_POST["answers"];
 
-            // Store the user's answers in the session
             $_SESSION['user_answers'] = $answers;
 
             $score = 0;
