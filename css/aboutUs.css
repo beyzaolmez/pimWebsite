@@ -88,10 +88,13 @@ p {
 }
 
 .flex-item-right-2 > img {
-	width: 26.063rem;
-	height: 16.75rem;
+
 	float: right;
 	margin: 0 3.125rem 3.125rem 3.125rem;
+}
+img{
+	width: 100%;
+	height: auto;
 }
 
 @media only screen and (max-width: 600px) {
