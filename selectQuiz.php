@@ -57,7 +57,7 @@
             </ul>
             </div>
             <p> <?php echo $lang['footer']; ?> </p>
-        </footer>
+            </footer>
 
         </div>
     </body>

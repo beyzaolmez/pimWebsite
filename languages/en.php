@@ -48,6 +48,8 @@
         "take-h3" => "Do you already know your Dutch level? <br> Select a quiz:",
         "beginner" => "Beginner",
         "mid" => "Intermediate",
-        "advanced" => "Advanced"
+        "advanced" => "Advanced",
+        "explanation" => "Translate the following Dutch words to English in the provided boxes. When you finish the quiz, click check to get your result and the correct answers. Good luck!",
+        "tip" => "Tip: make sure the spelling is correct."
 	);
 ?>

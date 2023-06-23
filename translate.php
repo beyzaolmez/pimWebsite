@@ -42,7 +42,7 @@
                 <div class="texts">
                     <textarea class="englishText2" name="english" placeholder="Type to translate"></textarea>
                 </div>
-                <input type="submit" name="submit" value="Translate!">
+                <input type="submit" name="submit" value="<?php echo $lang["Translate"]; ?>!">
             </form>
         </div>
     </div>
