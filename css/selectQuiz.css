@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway';
 }
 
 #container {
@@ -17,12 +20,14 @@ p {
 #intro {
     grid-column: 2/8;
 }
-.first{
+
+.first {
     font-size: 30px;
     font-weight: normal;
     font-family: Raleway;
 }
-.second{
+
+.second {
     font-size: 40px;
     font-weight: normal;
     font-family: Raleway;
@@ -38,14 +43,16 @@ h1 {
     font-size: 40px;
     font-family: 'Raleway';
 }
-.checkLevel{
+
+.checkLevel {
     grid-column: 2/6;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
 }
-.levelQuiz{
+
+.levelQuiz {
     grid-column: 8/12;
     display: flex;
     flex-direction: column;
@@ -53,7 +60,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.box1{
+.box1 {
     background-color: rgb(42, 81, 103, 0.75);
     padding-bottom: 104px;
     display: flex;
@@ -61,7 +68,8 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.box2{
+
+.box2 {
     background-color: rgb(42, 81, 103, 0.75);
     padding-bottom: 50px;
     display: flex;
@@ -69,23 +77,33 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-ul{
+
+.box2 ul {
+    text-align: center;
     list-style: none;
     color: white;
 }
-li{
+
+.box1, .box2 {
+    margin-bottom: 100px;
+}
+
+.box2 li {
     margin-bottom: 20px;
     font-size: 40px;
 }
-p{
+
+p {
     color: white;
     font-size: 40px;
     padding-top: 10px;
 }
-h3{
+
+h3 {
     color: white;
     font-size: 35px;
     font-weight: normal;
     margin-left: 55px;
     margin-right: 30px;
+    text-align: center;
 }
