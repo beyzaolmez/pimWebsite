@@ -9,26 +9,31 @@
         $isLoggedIn = false;
     }
 ?>
+
+<?php
+    include "languages/config.php";
+?>
+
 <header>
 	<div id="headerContainer">
 			<p id="logo"> A.I. P.I.M. </p>
 			<nav>
 				<ul>
-					<li> <a href="">Translate</a></li>
-					<li> <a href="">Quiz</a></li>
-					<li> <a href="">Chat</a></li>
-					<li> <a href="">About</a></li>
+					<li> <a href="translateText.php"> <?php echo $lang["Translate"]; ?></a></li>
+					<li> <a href="selectQuiz.php"> <?php echo $lang["Quiz"]; ?></a></li>
+					<li> <a href="conversation.php"> <?php echo $lang["Chat"]; ?></a></li>
+					<li> <a href="aboutUs.php"> <?php echo $lang["About"]; ?></a></li>
 				</ul>
 			</nav>
 			<div class="profile">
 				<?php 
 					if ($isLoggedIn) {
 				?>
-				<p>Welcome, <br> <?php echo $user_name; ?></p>
+				<p> <?php echo $lang["welcome"]; ?> <br> <?php echo $user_name; ?></p>
 				<?php 
 					} else {
 				?>
-				<a href="signIn.php">Sign in</a>
+				<a href="signIn.php"> <?php echo $lang["signIn"]; ?></a>
 				<?php 
 					} 
 				?>
@@ -39,16 +44,23 @@
 </header>
 <div id="menu" class="menu">
 	<a href="javascript:void(0)" class="close" onclick="closeMenu()">✖</a>
-	<a href="">Translate</a>
-	<a href="">Quiz</a>
-	<a href="">Chat</a>
-	<a href="">About</a>
+	<a href="translate.php"> <?php echo $lang["Translate"]; ?></a>
+	<a href="test.php"> <?php echo $lang["Quiz"]; ?></a>
+	<a href="conversation.php"> <?php echo $lang["Chat"]; ?></a>
+	<a href="aboutUs.php"> <?php echo $lang["About"]; ?></a>
 	<br>
-	<div class="menu-profile">
-		<!-- this is shown when user isn't logged in -->
-		<a href="">Sign in</a>
-		<!-- this is shown when user is logged in 
-		<p> Welcome, <br> User </p> -->
+	<div class="profile">
+		<?php 
+			if ($isLoggedIn) {
+		?>
+		<p> <?php echo $lang["welcome"]; ?> <br> <?php echo $user_name; ?></p>
+		<?php 
+			} else {
+		?>
+		<a href="signIn.php"> <?php echo $lang["signIn"]; ?></a>
+		<?php 
+			} 
+		?>
 		<img src="img/profile-icon.png" alt="user icon">
 	</div>
 </div>

@@ -1,33 +1,42 @@
+<?php
+    include "languages/config.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Translate text</title>
     <link rel="stylesheet" href="css/translate.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 <div id="container">
+
+    <?php include_once "header.php"; ?>
+
     <div id="intro">
-        <h2>Welcome,</h2>
-        <h1>What do you want to translate?</h1>
+        <h2><?php echo $lang['welcome']; ?></h2>
+        <h1><?php echo $lang['what']; ?></h1>
     </div>
     <div id="buttons">
         <div class="change">
             <img class="img" src="img/translate-icon.png" alt="text">
-            <a class="link" href="translateText.php"><p class="link">Text</p></a>
+            <a class="link" href="translateText.php"><p class="link"><?php echo $lang['text']; ?></p></a>
         </div>
         <div class="connect">
             <img class="img" src="img/talking-head.png" alt="connect">
-            <a class="link" href="translate.php"><p class="link">Connect to Pim</p></a>
+            <a class="link" href="translate.php"><p class="link"><?php echo $lang['connect']; ?></p></a>
         </div>
     </div>
     <div id="translator">
         <div id="translate">
             <div class="languages">
-                <p>English</p>
+                <p><?php echo $lang['lang_en']; ?></p>
                 <img class="lang" src="img/switch.png" alt="switch">
-                <p>Dutch</p>
+                <p><?php echo $lang['lang_nl']; ?></p>
             </div>
             <form method="POST" action="translateText.php">
                 <div class="texts">
@@ -38,8 +47,26 @@
             </form>
         </div>
     </div>
+    <footer>
+    <div class="select-menu">
+    <div class="select-btn">
+        <img src="img/globe-icon.jpg" alt="logo">
+        <span class="sBtn-text">English</span>
+        <i class="bx bx-chevron-up"></i>
+    </div>
+    <ul class="options">
+        <li class="option">
+        <span class="option-text"><a class="option-text" href="translateText.php?lang=en"><?php echo $lang['lang_en']; ?></a></span>
+        </li>
+        <li class="option">
+        <span class="option-text"><a class="option-text" href="translateText.php?lang=nl"><?php echo $lang['lang_nl']; ?></a></span>
+        </li>
+    </ul>
+    </div>
+    <p> <?php echo $lang['footer']; ?> </p>
+</footer>
 </div>
-
+<script src="dropdown.js"></script>
 <script type="text/javascript">
     // This is for the typewriter effect
     async function runTypewriterEffect(event) {

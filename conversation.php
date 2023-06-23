@@ -1,21 +1,30 @@
+<?php
+    include "languages/config.php";
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Translate text</title>
+    <title> A.I.P.I.M. | Chat </title>
     <link rel="stylesheet" href="css/conversation.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
 
+<body>
 <div id="container">
+
+<?php include_once "header.php"; ?>
+
     <div id="intro">
-        <h2>Welcome User,</h2>
-        <h1>What do you want to talk about?</h1>
+        <h2><?php echo $lang['welcome']; ?></h2>
+        <h1><?php echo $lang['what2']; ?></h1>
     </div>
     <div id="buttons">
         <div class="connect">
             <img class="img" src="img/talk-icon.png" alt="connect">
-            <a class="link" href="translate.php"><p class="link">Connect to Pim</p></a>
+            <a class="link" href="translate.php"><p class="link"><?php echo $lang['connect']; ?></p></a>
         </div>
     </div>
 
@@ -41,8 +50,27 @@
             </form>
         </div>
     </div>
+    <footer>
+    <div class="select-menu">
+    <div class="select-btn">
+        <img src="img/globe-icon.jpg" alt="logo">
+        <span class="sBtn-text">English</span>
+        <i class="bx bx-chevron-up"></i>
+    </div>
+    <ul class="options">
+        <li class="option">
+        <span class="option-text"><a class="option-text" href="conversation.php?lang=en"><?php echo $lang['lang_en']; ?></a></span>
+        </li>
+        <li class="option">
+        <span class="option-text"><a class="option-text" href="conversation.php?lang=nl"><?php echo $lang['lang_nl']; ?></a></span>
+        </li>
+    </ul>
+    </div>
+    <p> <?php echo $lang['footer']; ?> </p>
+    </footer>
 </div>
 
+<script src="dropdown.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
