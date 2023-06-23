@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Translate text</title>
+    <title>Forgot your password?</title>
     <link rel="stylesheet" href="css/recover.css">
 </head>
 
@@ -27,7 +27,7 @@
                 <input class="button" type="submit" name="reset-request-submit" value="Send mail">
             </div>
         </form>
-        <p> Remembered your password? <a href="signIn.php">Login</a> </p>
+        <p> Remember your password? <a href="signIn.php">Login</a> </p>
     </main>  
     </div>
 </body>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Translate text</title>
+    <title>Reset your password</title>
     <link rel="stylesheet" href="css/recover.css">
 </head>
 
