@@ -36,6 +36,18 @@
         //from the conversation page
         "welcome" => "Welkom,",
 		"what2" => "Wat wil je over praten?",
-		"connect" => "maak verbinding met PIM"
+		"connect" => "maak verbinding met PIM",
+
+        //from the quiz pages
+        "welcome" => "Welkom,",
+        "what3" => "Welke quiz wil je doen?",
+        "check" => "Controleer je niveau",
+        "check-h3" => "Wilt u weten wat uw Nederlandse niveau is? <br> Doe de volgende quiz:",
+        "level" => "Niveauquiz",
+        "take" => "Doe een quiz",
+        "take-h3" => "Kent u uw niveau Nederlands al? <br> Selecteer een quiz:",
+        "beginner" => "Beginner",
+        "mid" => "Tussenliggend",
+        "advanced" => "Geavanceerd"
 	);
 ?>

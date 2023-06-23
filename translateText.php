@@ -64,7 +64,7 @@
     </ul>
     </div>
     <p> <?php echo $lang['footer']; ?> </p>
-</footer>
+    </footer>
 </div>
 <script src="dropdown.js"></script>
 <script type="text/javascript">

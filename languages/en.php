@@ -36,6 +36,18 @@
         //from the conversation page
         "welcome" => "Welcome,",
 		"what2" => "What do you want to talk about?",
-		"connect" => "Connect to Pim"
+		"connect" => "Connect to Pim",
+
+        //from the quiz pages
+        "welcome" => "Welcome,",
+		"what3" => "What quiz do you want to take?",
+        "check" => "Check your level",
+        "check-h3" => "Do you want to know your Dutch level? <br> Take the following quiz:",
+        "level" => "Level quiz",
+        "take" => "Take a quiz",
+        "take-h3" => "Do you already know your Dutch level? <br> Select a quiz:",
+        "beginner" => "Beginner",
+        "mid" => "Intermediate",
+        "advanced" => "Advanced"
 	);
 ?>
