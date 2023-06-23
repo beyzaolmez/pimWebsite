@@ -47,7 +47,7 @@
         "take" => "Doe een quiz",
         "take-h3" => "Kent u uw niveau Nederlands al? <br> Selecteer een quiz:",
         "beginner" => "Beginner",
-        "mid" => "Tussenliggend",
+        "mid" => "gemiddeld",
         "advanced" => "Geavanceerd"
 	);
 ?>
