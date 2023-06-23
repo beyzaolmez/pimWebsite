@@ -102,12 +102,12 @@
         conversationContainer.animate({ scrollTop: conversationContainer.prop("scrollHeight") }, 300);
 
         // Send the message to the server using fetch
-        fetch("http://127.0.0.1:5000/conversation", {
+        fetch("http://127.0.0.1:5000/ll/conversation", {
             method: "POST",
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
             },
-            body: `text=${encodeURIComponent(userInput)}`
+            body: `message=${encodeURIComponent(userInput)}`
         })
             .then(response => response.json())
             .then(data => {
