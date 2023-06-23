@@ -16,7 +16,7 @@
                 <h2>Check your level</h2>
                 <div class="box1">
                     <h3>Do you want to know your Dutch level? <br> Take the following quiz:</h3>
-                    <p>Level quiz</p>
+                    <p><a href="test.php">Level quiz</a></p>
                 </div>
             </div>
             <div class="levelQuiz">
@@ -24,9 +24,9 @@
                 <div class="box2">
                     <h3>Do you already know your Dutch level? Select a quiz:</h3>
                     <ul>
-                        <li>Beginner</li>
-                        <li>Intermediate</li>
-                        <li>Advanced</li>
+                        <li><a href="test.php">Beginner</a></li>
+                        <li><a href="test.php">Intermediate</li>
+                        <li><a href="test.php">Advanced</a></li>
                     </ul>
                 </div>
             </div>
