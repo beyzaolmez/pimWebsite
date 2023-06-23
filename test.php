@@ -5,16 +5,24 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST["retry"]) && $_POST["retry"] == "Retry") {
+    if (isset($_POST["retry"]) && $_POST["retry"] == "New quiz") {
         session_destroy();
-        header("Location: test.php");
+        header("Location: selectQuiz.php");
         exit;
     }
 }
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     if (!isset($_SESSION['questions'])) {
-        $level = "beginner";
+        if ($_GET['level'] == "beginner") {
+            $level = "beginner";
+        } elseif ($_GET['level'] == "mid") {
+            $level = "intermediate";
+        } elseif ($_GET['level'] == "advanced") {
+            $level = "advanced";
+        }
+
+
         $endpoint = "http://host.docker.internal:5000/ll/quiz";
 
         $curl = curl_init($endpoint);
@@ -43,6 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
         $questions = $_SESSION["questions"];
     }
 }
+
 
 $userAnswers = $_SESSION['user_answers'] ?? array();
 
@@ -90,7 +99,7 @@ $userAnswers = $_SESSION['user_answers'] ?? array();
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (isset($_POST["answers"])) {
-                echo "<input type='submit' name='retry' value='Retry'>";
+                echo "<input type='submit' name='retry' value='New quiz'>";
                 if (isset($_POST["show"])) {
                     echo "<input type='submit' name='show' value='Show Answers' disabled>";
                 } else {
