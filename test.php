@@ -2,7 +2,7 @@
     include "languages/config.php";
 ?>
 <?php
-session_start();
+//session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["retry"]) && $_POST["retry"] == "New quiz") {
